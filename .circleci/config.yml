@@ -51,12 +51,10 @@ jobs:
             pytest
 
   build-micro-auth:
-    docker:
-      - image: cimg/python:3.10.12
+    machine:
+      image: ubuntu-2204:current
     steps:
       - checkout
-      - setup_remote_docker:
-          version: 20.10.14
       - run:
           name: Build Auth Service
           command: |
@@ -64,12 +62,10 @@ jobs:
             docker build -t service_auth:latest .
 
   build-micro-api:
-    docker:
-      - image: cimg/node:20.11.0
+    machine:
+      image: ubuntu-2204:current
     steps:
       - checkout
-      - setup_remote_docker:
-          version: 20.10.14
       - run:
           name: Build API Service
           command: |
@@ -77,12 +73,10 @@ jobs:
             docker build -t service_api:latest .
 
   build-micro-web:
-    docker:
-      - image: cimg/base:stable
+    machine:
+      image: ubuntu-2204:current
     steps:
       - checkout
-      - setup_remote_docker:
-          version: 20.10.14
       - run:
           name: Build Web Service
           command: |
