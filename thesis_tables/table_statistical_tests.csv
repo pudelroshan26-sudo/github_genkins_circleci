@@ -1,36 +1,36 @@
 Test Name,Statistic (W),p-value,Significance (alpha=0.05),Significance (alpha=0.017)
-Shapiro-Wilk (Project A Cold) - GHA,0.9656808398408571,0.4927159515492925,Not Significant (Normal),
-Shapiro-Wilk (Project A Cold) - CircleCI,0.9654087731448365,0.4222688839064405,Not Significant (Normal),
-Shapiro-Wilk (Project A Cold) - Jenkins,0.984949399284655,0.9363233194574951,Not Significant (Normal),
-Kruskal-Wallis: Cold Builds Project A,66.86001973760591,3.030617899951741e-15,Significant,
-Post-Hoc Mann-Whitney U: Cold Builds Project A (GHA vs CCI),687.0,6.828542550429402e-06,,Significant
-Post-Hoc Mann-Whitney U: Cold Builds Project A (GHA vs Jenkins),2.0,1.2527502560176355e-10,,Significant
-Post-Hoc Mann-Whitney U: Cold Builds Project A (CircleCI vs Jenkins),0.0,3.019859359162157e-11,,Significant
-Kruskal-Wallis: Cold Builds Project B,66.01797313797312,4.617206303246478e-15,Significant,
-Post-Hoc Mann-Whitney U: Cold Builds Project B (GHA vs CCI),746.0,1.2493242098147689e-05,,Significant
-Post-Hoc Mann-Whitney U: Cold Builds Project B (GHA vs Jenkins),17.0,1.6132250444697864e-10,,Significant
-Post-Hoc Mann-Whitney U: Cold Builds Project B (CircleCI vs Jenkins),1.0,3.3383888204287995e-11,,Significant
-Kruskal-Wallis: Cold Builds Project C,68.96370777044393,1.058573778005612e-15,Significant,
-Post-Hoc Mann-Whitney U: Cold Builds Project C (GHA vs CCI),701.0,3.376083476316943e-07,,Significant
-Post-Hoc Mann-Whitney U: Cold Builds Project C (GHA vs Jenkins),1.0,3.3383888204287995e-11,,Significant
-Post-Hoc Mann-Whitney U: Cold Builds Project C (CircleCI vs Jenkins),0.0,1.5637904632766024e-10,,Significant
-Kruskal-Wallis: Warm Builds Project A,72.38735373886095,1.9111107518051888e-16,Significant,
-Post-Hoc Mann-Whitney U: Warm Builds Project A (GHA vs CCI),798.0,3.8803859120006774e-08,,Significant
-Post-Hoc Mann-Whitney U: Warm Builds Project A (GHA vs Jenkins),0.0,3.019859359162157e-11,,Significant
-Post-Hoc Mann-Whitney U: Warm Builds Project A (CircleCI vs Jenkins),0.0,4.461750341666232e-11,,Significant
-Kruskal-Wallis: Warm Builds Project B,68.66725274725275,1.2277092336642158e-15,Significant,
-Post-Hoc Mann-Whitney U: Warm Builds Project B (GHA vs CCI),759.0,5.091173485363367e-06,,Significant
-Post-Hoc Mann-Whitney U: Warm Builds Project B (GHA vs Jenkins),0.0,3.019859359162157e-11,,Significant
-Post-Hoc Mann-Whitney U: Warm Builds Project B (CircleCI vs Jenkins),0.0,3.019859359162157e-11,,Significant
-Kruskal-Wallis: Warm Builds Project C,71.16044943820225,3.5294313552463254e-16,Significant,
-Post-Hoc Mann-Whitney U: Warm Builds Project C (GHA vs CCI),813.0,8.351995916556161e-08,,Significant
-Post-Hoc Mann-Whitney U: Warm Builds Project C (GHA vs Jenkins),0.0,4.461750341666232e-11,,Significant
-Post-Hoc Mann-Whitney U: Warm Builds Project C (CircleCI vs Jenkins),0.0,4.461750341666232e-11,,Significant
-Kruskal-Wallis: Queue Latency,55.85282534762587,7.442401173201036e-13,Significant,
-Post-Hoc Mann-Whitney U: Queue Latency (GHA vs CCI),715.0,2.2575280271488726e-05,,Significant
-Post-Hoc Mann-Whitney U: Queue Latency (GHA vs Jenkins),81.0,8.333573435103933e-08,,Significant
-Post-Hoc Mann-Whitney U: Queue Latency (CircleCI vs Jenkins),22.0,2.609852787955853e-10,,Significant
-Kruskal-Wallis: MTTR after Failure,70.5382857634853,4.817324091503985e-16,Significant,
-Post-Hoc Mann-Whitney U: MTTR after Failure (GHA vs CCI),98.0,3.3608304756190055e-07,,Significant
-Post-Hoc Mann-Whitney U: MTTR after Failure (GHA vs Jenkins),0.0,3.019859359162157e-11,,Significant
-Post-Hoc Mann-Whitney U: MTTR after Failure (CircleCI vs Jenkins),0.0,4.461750341666232e-11,,Significant
+Shapiro-Wilk (Project A Cold) - GHA,0.8108722549579402,0.05238479493150532,Not Significant (Normal),
+Shapiro-Wilk (Project A Cold) - CircleCI,0.9590274681633337,0.7880865701282205,Not Significant (Normal),
+Shapiro-Wilk (Project A Cold) - Jenkins,0.8758570433593221,0.1419679618062486,Not Significant (Normal),
+Kruskal-Wallis: Cold Builds Project A,21.267692307692315,2.4086810393842855e-05,Significant,
+Post-Hoc Mann-Whitney U: Cold Builds Project A (GHA vs CCI),63.0,0.00017482517482517483,,Significant
+Post-Hoc Mann-Whitney U: Cold Builds Project A (GHA vs Jenkins),63.0,0.00017482517482517483,,Significant
+Post-Hoc Mann-Whitney U: Cold Builds Project A (CircleCI vs Jenkins),81.0,0.00041229480206169127,,Significant
+Kruskal-Wallis: Cold Builds Project B,22.23076923076924,1.4881605834683458e-05,Significant,
+Post-Hoc Mann-Whitney U: Cold Builds Project B (GHA vs CCI),72.0,8.227067050596462e-05,,Significant
+Post-Hoc Mann-Whitney U: Cold Builds Project B (GHA vs Jenkins),81.0,0.00041229480206169127,,Significant
+Post-Hoc Mann-Whitney U: Cold Builds Project B (CircleCI vs Jenkins),72.0,8.227067050596462e-05,,Significant
+Kruskal-Wallis: Cold Builds Project C,22.23076923076924,1.4881605834683458e-05,Significant,
+Post-Hoc Mann-Whitney U: Cold Builds Project C (GHA vs CCI),72.0,8.227067050596462e-05,,Significant
+Post-Hoc Mann-Whitney U: Cold Builds Project C (GHA vs Jenkins),81.0,0.00041229480206169127,,Significant
+Post-Hoc Mann-Whitney U: Cold Builds Project C (CircleCI vs Jenkins),72.0,8.227067050596462e-05,,Significant
+Kruskal-Wallis: Warm Builds Project A,21.267692307692315,2.4086810393842855e-05,Significant,
+Post-Hoc Mann-Whitney U: Warm Builds Project A (GHA vs CCI),81.0,0.00041229480206169127,,Significant
+Post-Hoc Mann-Whitney U: Warm Builds Project A (GHA vs Jenkins),63.0,0.00017482517482517483,,Significant
+Post-Hoc Mann-Whitney U: Warm Builds Project A (CircleCI vs Jenkins),63.0,0.00017482517482517483,,Significant
+Kruskal-Wallis: Warm Builds Project B,24.007389162561566,6.121553943824062e-06,Significant,
+Post-Hoc Mann-Whitney U: Warm Builds Project B (GHA vs CCI),81.0,0.00041229480206169127,,Significant
+Post-Hoc Mann-Whitney U: Warm Builds Project B (GHA vs Jenkins),90.0,0.0002797002701866865,,Significant
+Post-Hoc Mann-Whitney U: Warm Builds Project B (CircleCI vs Jenkins),90.0,0.0002797002701866865,,Significant
+Kruskal-Wallis: Warm Builds Project C,23.14285714285714,9.431753104603051e-06,Significant,
+Post-Hoc Mann-Whitney U: Warm Builds Project C (GHA vs CCI),81.0,0.00041229480206169127,,Significant
+Post-Hoc Mann-Whitney U: Warm Builds Project C (GHA vs Jenkins),81.0,0.00041229480206169127,,Significant
+Post-Hoc Mann-Whitney U: Warm Builds Project C (CircleCI vs Jenkins),81.0,0.00041229480206169127,,Significant
+Kruskal-Wallis: Queue Latency,17.146384479717796,0.00018910800712510574,Significant,
+Post-Hoc Mann-Whitney U: Queue Latency (GHA vs CCI),61.0,0.07738861114200664,,Not Significant
+Post-Hoc Mann-Whitney U: Queue Latency (GHA vs Jenkins),5.0,0.0019976900972723025,,Significant
+Post-Hoc Mann-Whitney U: Queue Latency (CircleCI vs Jenkins),0.0,0.00041229480206169127,,Significant
+Kruskal-Wallis: MTTR after Failure,21.395299145299163,2.2597990475569598e-05,Significant,
+Post-Hoc Mann-Whitney U: MTTR after Failure (GHA vs CCI),3.0,0.0005758946935417523,,Significant
+Post-Hoc Mann-Whitney U: MTTR after Failure (GHA vs Jenkins),0.0,0.00041229480206169127,,Significant
+Post-Hoc Mann-Whitney U: MTTR after Failure (CircleCI vs Jenkins),0.0,8.227067050596462e-05,,Significant

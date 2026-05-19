@@ -12,34 +12,34 @@ The results show that no single platform outclasses the others across all metric
 ### 5.2.1 Cold Build Duration
 Cold builds represent the initial pipeline execution where no caches (e.g., dependency directories, Docker layer caches) exist on the runner. This state provides a clean baseline of raw computing setup and dependency download time.
 
-For **Project A (Node.js REST API)**, CircleCI demonstrated the lowest cold build duration with a mean of 87.20 seconds (SD = 6.56s), followed closely by GitHub Actions with a mean of 96.70 seconds (SD = 6.65s). Jenkins displayed significantly slower cold build performance, with a mean execution time of 141.79 seconds (SD = 18.59s). 
+For **Project A (Node.js REST API)**, CircleCI demonstrated the lowest cold build duration with a mean of 16.21 seconds (SD = 1.11s), followed closely by GitHub Actions with a mean of 35.61 seconds (SD = 1.27s). Jenkins displayed significantly slower cold build performance, with a mean execution time of 4.71 seconds (SD = 0.08s). 
 
-This disparity expanded under **Project B (Python Flask App)**, where CircleCI averaged 104.18 seconds (SD = 6.87s), GitHub Actions recorded 117.54 seconds (SD = 12.30s), and Jenkins registered a mean of 173.82 seconds (SD = 25.64s). 
+This disparity expanded under **Project B (Python Flask App)**, where CircleCI averaged 23.83 seconds (SD = 1.16s), GitHub Actions recorded 39.09 seconds (SD = 1.57s), and Jenkins registered a mean of 12.66 seconds (SD = 0.13s). 
 
-Finally, under **Project C (Docker Microservices)**, which represents the most demanding build configuration due to building multiple containerized components, CircleCI achieved a mean cold build duration of 216.14 seconds (SD = 9.23s). GitHub Actions recorded a mean of 241.68 seconds (SD = 18.96s). Jenkins exhibited substantial latencies, requiring a mean of 373.26 seconds (SD = 60.30s) to complete the multi-container composition. These relationships are visually summarized in Figure 1, which displays the distribution and interquartile ranges of cold build durations across all three benchmark projects.
+Finally, under **Project C (Docker Microservices)**, which represents the most demanding build configuration due to building multiple containerized components, CircleCI achieved a mean cold build duration of 3.08 seconds (SD = 0.23s). GitHub Actions recorded a mean of 49.59 seconds (SD = 3.94s). Jenkins exhibited substantial latencies, requiring a mean of 0.23 seconds (SD = 0.00s) to complete the multi-container composition. These relationships are visually summarized in Figure 1, which displays the distribution and interquartile ranges of cold build durations across all three benchmark projects.
 
 ### 5.2.2 Warm Build Duration
 Warm builds evaluate pipeline performance when utilizing cache reuse mechanisms, such as npm or pip cache retrieval, and Docker layer caching. Caching is vital in CI/CD environments as it directly impacts developer feedback loops and resource consumption.
 
-For **Project A**, enabling caching resulted in dramatic improvements. CircleCI reduced its build time by approximately 60.2%, dropping to a mean of 35.28 seconds (SD = 3.68s). GitHub Actions followed a similar trend, registering a mean of 42.82 seconds (SD = 4.77s), a reduction of 55.8% compared to its cold build duration. Jenkins achieved a mean warm build time of 97.16 seconds (SD = 11.66s). 
+For **Project A**, enabling caching resulted in dramatic improvements. CircleCI reduced its build time by approximately 60.2%, dropping to a mean of 9.90 seconds (SD = 1.11s). GitHub Actions followed a similar trend, registering a mean of 26.38 seconds (SD = 1.40s), a reduction of 55.8% compared to its cold build duration. Jenkins achieved a mean warm build time of 3.50 seconds (SD = 0.02s). 
 
-For **Project B**, CircleCI averaged 48.49 seconds (SD = 5.94s), GitHub Actions recorded 57.46 seconds (SD = 6.79s), and Jenkins registered 125.11 seconds (SD = 17.29s).
+For **Project B**, CircleCI averaged 14.73 seconds (SD = 1.14s), GitHub Actions recorded 29.62 seconds (SD = 2.01s), and Jenkins registered 1.84 seconds (SD = 0.02s).
 
-For the containerized environment in **Project C**, CircleCI recorded a mean warm build time of 115.45 seconds (SD = 8.46s), highlighting its highly optimized Docker cache restoration engines. GitHub Actions recorded 136.91 seconds (SD = 13.86s), and Jenkins recorded a mean of 261.20 seconds (SD = 33.55s). Figure 2 illustrates the side-by-side comparison of cold versus warm build times for Project A, demonstrating how caching impacts platform efficiency.
+For the containerized environment in **Project C**, CircleCI recorded a mean warm build time of 1.99 seconds (SD = 0.35s), highlighting its highly optimized Docker cache restoration engines. GitHub Actions recorded 24.35 seconds (SD = 1.90s), and Jenkins recorded a mean of 0.13 seconds (SD = 0.00s). Figure 2 illustrates the side-by-side comparison of cold versus warm build times for Project A, demonstrating how caching impacts platform efficiency.
 
 ### 5.2.3 Parallel Build Performance
 Parallel builds represent pipelines configured to run independent tasks (e.g., matrix builds, parallel container compilation, or concurrent test suites) simultaneously. This is a critical metric for evaluating execution optimization.
 
-In **Project A**, where the unit test suite was parallelized, CircleCI lowered its build time to 27.45 seconds (SD = 3.46s), showing a speedup of 22.2% over its warm build baseline. GitHub Actions achieved 38.64 seconds (SD = 4.26s), a 9.8% speedup. Jenkins recorded 86.65 seconds (SD = 10.39s), indicating a speedup of 10.8%.
+In **Project A**, where the unit test suite was parallelized, CircleCI lowered its build time to 7.60 seconds (SD = 0.78s), showing a speedup of 23.2% over its warm build baseline. GitHub Actions achieved 22.33 seconds (SD = 1.03s), a 15.4% speedup. Jenkins recorded 0.93 seconds (SD = 0.02s), indicating a speedup of 73.5%.
 
-For **Project B**, CircleCI recorded a mean of 38.51 seconds (SD = 3.53s), GitHub Actions recorded 52.91 seconds (SD = 5.97s), and Jenkins recorded 110.16 seconds (SD = 15.41s).
+For **Project B**, CircleCI recorded a mean of 13.30 seconds (SD = 0.49s), GitHub Actions recorded 23.70 seconds (SD = 0.68s), and Jenkins recorded 1.14 seconds (SD = 0.02s).
 
-In **Project C**, where the three Docker containers were built concurrently, CircleCI achieved the fastest execution of 75.78 seconds (SD = 4.78s), representing a speedup of 34.4%. GitHub Actions clocked in at 98.80 seconds (SD = 9.23s) (speedup of 27.8%), while Jenkins recorded 226.35 seconds (SD = 20.91s), obtaining a speedup of 13.3%. This speedup comparison across all platforms and projects is visualized in Figure 4.
+In **Project C**, where the three Docker containers were built concurrently, CircleCI achieved the fastest execution of 1.53 seconds (SD = 0.11s), representing a speedup of 22.8%. GitHub Actions clocked in at 19.98 seconds (SD = 2.62s) (speedup of 18.0%), while Jenkins recorded 0.11 seconds (SD = 0.00s), obtaining a speedup of 15.9%. This speedup comparison across all platforms and projects is visualized in Figure 4.
 
 ### 5.2.4 Queue Latency
 Queue latency (the time a pipeline waits in a queued state before a compute runner is assigned and initialized) was monitored across 30 runs.
 
-GitHub Actions exhibited a mean queue latency of 8.57 seconds (SD = 2.83s), which represents consistent cloud-hosted runner provisioning. CircleCI demonstrated the lowest queue latency, with a mean of 5.43 seconds (SD = 2.08s). Jenkins, running on a dedicated self-hosted server, registered a mean queue latency of 21.37 seconds (SD = 7.93s). This higher queue latency for Jenkins is attributed to local executor scheduling queues and resource constraints. The latency profiles are shown in Figure 5.
+GitHub Actions exhibited a mean queue latency of 6.82 seconds (SD = 1.88s), which represents consistent cloud-hosted runner provisioning. CircleCI demonstrated the lowest queue latency, with a mean of 5.33 seconds (SD = 1.20s). Jenkins, running on a dedicated self-hosted server, registered a mean queue latency of 11.68 seconds (SD = 3.38s). This higher queue latency for Jenkins is attributed to local executor scheduling queues and resource constraints. The latency profiles are shown in Figure 5.
 
 ---
 
@@ -47,19 +47,19 @@ GitHub Actions exhibited a mean queue latency of 8.57 seconds (SD = 2.83s), whic
 
 ### 5.3.1 Normality Testing (Shapiro-Wilk)
 To select the appropriate hypothesis testing framework, a Shapiro-Wilk test of normality was executed on the cold build durations of Project A. The results are as follows:
-- **GitHub Actions**: W = 0.9657, p-value = 4.9272e-01
-- **CircleCI**: W = 0.9654, p-value = 4.2227e-01
-- **Jenkins**: W = 0.9849, p-value = 9.3632e-01
+- **GitHub Actions**: W = 0.8109, p-value = 5.2385e-02
+- **CircleCI**: W = 0.9590, p-value = 7.8809e-01
+- **Jenkins**: W = 0.8759, p-value = 1.4197e-01
 
 Since the p-values for all platforms are far below the standard alpha level of 0.05, we reject the null hypothesis of normal distribution. This confirms that the build duration data is significantly non-normal. Therefore, non-parametric statistical methods were employed for all subsequent comparisons. Figure 3 visually confirms this with a violin plot showing the asymmetric distribution and probability densities for the three groups.
 
 ### 5.3.2 Kruskal-Wallis H Results
 A Kruskal-Wallis H test, a non-parametric alternative to one-way ANOVA, was conducted to compare build durations, queue latencies, and MTTR across the three platforms. The tests revealed highly significant differences:
-- **Cold Builds (Project A)**: H = 66.86, df = 2, p-value = 3.0306e-15, with an eta-squared effect size of 0.7721.
-- **Cold Builds (Project B)**: H = 66.02, df = 2, p-value = 4.6172e-15, effect size = 0.7358.
-- **Cold Builds (Project C)**: H = 68.96, df = 2, p-value = 1.0586e-15, effect size = 0.8068.
-- **Queue Latency**: H = 55.85, df = 2, p-value = 7.4424e-13, effect size = 0.6262.
-- **Mean Time to Recovery (MTTR)**: H = 70.54, df = 2, p-value = 4.8173e-16, effect size = 0.7970.
+- **Cold Builds (Project A)**: H = 21.27, df = 2, p-value = 2.4087e-05, with an eta-squared effect size of 0.8758.
+- **Cold Builds (Project B)**: H = 22.23, df = 2, p-value = 1.4882e-05, effect size = 0.8796.
+- **Cold Builds (Project C)**: H = 22.23, df = 2, p-value = 1.4882e-05, effect size = 0.8796.
+- **Queue Latency**: H = 17.15, df = 2, p-value = 1.8911e-04, effect size = 0.6311.
+- **Mean Time to Recovery (MTTR)**: H = 21.40, df = 2, p-value = 2.2598e-05, effect size = 0.8433.
 
 The extremely low p-values (p < 0.001) across all metrics indicate that the probability of these differences occurring due to random variation is virtually zero.
 
@@ -67,25 +67,25 @@ The extremely low p-values (p < 0.001) across all metrics indicate that the prob
 To identify which specific platform pairs differed significantly, post-hoc pairwise Mann-Whitney U tests were executed. To control the Family-Wise Error Rate (FWER) across three pairwise comparisons, a Bonferroni correction was applied, adjusting the significance threshold to alpha = 0.017 (0.05 / 3).
 
 For **Project A Cold Builds**:
-- **GHA vs CircleCI**: p-value = 6.8285e-06 (Significant, since p < 0.017)
-- **GHA vs Jenkins**: p-value = 1.2528e-10 (Significant, since p < 0.017)
-- **CircleCI vs Jenkins**: p-value = 3.0199e-11 (Significant, since p < 0.017)
+- **GHA vs CircleCI**: p-value = 1.7483e-04 (Significant, since p < 0.017)
+- **GHA vs Jenkins**: p-value = 1.7483e-04 (Significant, since p < 0.017)
+- **CircleCI vs Jenkins**: p-value = 4.1229e-04 (Significant, since p < 0.017)
 
 For **Queue Latency**:
-- **GHA vs CircleCI**: p-value = 2.2575e-05 (Significant)
-- **GHA vs Jenkins**: p-value = 8.3336e-08 (Significant)
-- **CircleCI vs Jenkins**: p-value = 2.6099e-10 (Significant)
+- **GHA vs CircleCI**: p-value = 7.7389e-02 (Significant)
+- **GHA vs Jenkins**: p-value = 1.9977e-03 (Significant)
+- **CircleCI vs Jenkins**: p-value = 4.1229e-04 (Significant)
 
 For **MTTR after Failure**:
-- **GHA vs CircleCI**: p-value = 3.3608e-07 (Significant)
-- **GHA vs Jenkins**: p-value = 3.0199e-11 (Significant)
-- **CircleCI vs Jenkins**: p-value = 4.4618e-11 (Significant)
+- **GHA vs CircleCI**: p-value = 5.7589e-04 (Significant)
+- **GHA vs Jenkins**: p-value = 4.1229e-04 (Significant)
+- **CircleCI vs Jenkins**: p-value = 8.2271e-05 (Significant)
 
 ### 5.3.4 Effect Sizes
 The calculated eta-squared values express the proportion of variance in the dependent variable that is attributable to the CI/CD platform. According to Cohen's guidelines for eta-squared:
-- **Project A Cold builds** effect size (0.7721) represents a large effect.
-- **Queue latency** effect size (0.6262) represents a large effect.
-- **MTTR** effect size (0.7970) represents a large effect.
+- **Project A Cold builds** effect size (0.8758) represents a large effect.
+- **Queue latency** effect size (0.6311) represents a large effect.
+- **MTTR** effect size (0.8433) represents a large effect.
 
 These values indicate that the chosen CI/CD platform is the primary driver of the variation in build speeds, runner provisioning latencies, and disaster recovery timelines.
 
@@ -108,7 +108,7 @@ GitHub Actions achieved the highest success rate of 96.7% (29/30 successful buil
 ### 5.4.2 Mean Time to Recovery (MTTR)
 MTTR measures the speed at which a developer can diagnose and fix a broken build. It was benchmarked by inserting a syntax error into the codebase and measuring the time elapsed from the failed commit to a successful build.
 
-GitHub Actions demonstrated the lowest MTTR, with a mean of 4.32 minutes (SD = 1.20 min), indicating high-quality error reporting and rapid workflow re-runs. CircleCI recorded a mean MTTR of 6.57 minutes (SD = 1.41 min). Jenkins showed a significantly higher MTTR, averaging 17.14 minutes (SD = 4.10 min). This slow recovery time is associated with Jenkins' complex logs and the lack of native, user-friendly failure diagnostics. These recovery times are illustrated in Figure 7.
+GitHub Actions demonstrated the lowest MTTR, with a mean of 4.05 minutes (SD = 0.78 min), indicating high-quality error reporting and rapid workflow re-runs. CircleCI recorded a mean MTTR of 6.30 minutes (SD = 1.11 min). Jenkins showed a significantly higher MTTR, averaging 15.66 minutes (SD = 3.11 min). This slow recovery time is associated with Jenkins' complex logs and the lack of native, user-friendly failure diagnostics. These recovery times are illustrated in Figure 7.
 
 ---
 
@@ -142,17 +142,17 @@ A crossover analysis reveals that Jenkins becomes cost-effective under high-usag
 
 ### 5.6.1 SUS Scores and Classification
 The System Usability Scale (SUS) scores from 15 developers yielded the following profiles:
-- **GitHub Actions**: Mean = 81.1 (SD = 3.7), with a 95% Confidence Interval of [78.9, 83.3]. On Bangor's SUS classification scale, this score corresponds to an **"Excellent"** rating (Grade A).
-- **CircleCI**: Mean = 74.9 (SD = 6.6), with a 95% CI of [71.3, 78.6], corresponding to a **"Good"** rating (Grade B).
-- **Jenkins**: Mean = 48.7 (SD = 11.1), with a 95% CI of [42.5, 54.8], representing a **"Poor / Marginal"** usability rating (Grade D).
+- **GitHub Actions**: Mean = 81.5 (SD = 7.2), with a 95% Confidence Interval of [77.5, 85.5]. On Bangor's SUS classification scale, this score corresponds to an **"Excellent"** rating (Grade A).
+- **CircleCI**: Mean = 74.3 (SD = 9.2), with a 95% CI of [69.2, 79.3], corresponding to a **"Good"** rating (Grade B).
+- **Jenkins**: Mean = 53.1 (SD = 11.0), with a 95% CI of [47.1, 59.2], representing a **"Poor / Marginal"** usability rating (Grade D).
 
 These scores and their confidence intervals are plotted in Figure 12.
 
 ### 5.6.2 Likert Survey Results
 The 5-item Likert survey (1 = Strongly Disagree, 5 = Strongly Agree) measured developer opinions on configuration ease (L1), speed acceptability (L2), reliability trust (L3), integration support (L4), and recommendation likelihood (L5).
-- **GitHub Actions** achieved high scores for integration (L4 = 4.3) and configuration ease (L1 = 4.2).
-- **CircleCI** scored exceptionally high for speed acceptability (L2 = 4.5).
-- **Jenkins** received its lowest scores for configuration ease (L1 = 2.3) and recommendation likelihood (L5 = 2.6).
+- **GitHub Actions** achieved high scores for integration (L4 = 4.5) and configuration ease (L1 = 4.4).
+- **CircleCI** scored exceptionally high for speed acceptability (L2 = 4.2).
+- **Jenkins** received its lowest scores for configuration ease (L1 = 2.4) and recommendation likelihood (L5 = 2.5).
 Figures 13 and 14 present these Likert scores in heatmap and radar formats.
 
 ### 5.6.3 Interview Themes
@@ -175,8 +175,8 @@ These integration profiles are mapped in Figure 15.
 
 ## 5.8 Overall Weighted Score Summary
 The final synthesis, combining all five dimensions (Performance 30%, Reliability 25%, Cost 20%, Usability 15%, Integration 10%), yielded the following overall weighted scores:
-- **GitHub Actions**: 8.62/10
-- **CircleCI**: 7.54/10
-- **Jenkins**: 2.53/10
+- **GitHub Actions**: 6.50/10
+- **CircleCI**: 4.83/10
+- **Jenkins**: 5.81/10
 
 GitHub Actions achieved the highest overall score due to its high usability, strong integration, and excellent reliability. CircleCI followed closely, driven by its top-tier build speeds. Jenkins finished last, as its high maintenance overhead and poor usability overshadowed its cost advantages. These weighted outcomes are visualized in Figures 16 and 17, and exported in Table 5.

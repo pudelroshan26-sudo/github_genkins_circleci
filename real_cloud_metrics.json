@@ -1,0 +1,202 @@
+{
+    "github_actions_scraped": [
+        {
+            "id": 26131289109,
+            "project": "project_c",
+            "duration": 25.0,
+            "conclusion": "success",
+            "run_number": 7
+        },
+        {
+            "id": 26131289092,
+            "project": "project_b",
+            "duration": 41.0,
+            "conclusion": "success",
+            "run_number": 7
+        },
+        {
+            "id": 26131289028,
+            "project": "project_a",
+            "duration": 35.0,
+            "conclusion": "success",
+            "run_number": 7
+        },
+        {
+            "id": 26131277392,
+            "project": "project_c",
+            "duration": 51.0,
+            "conclusion": "success",
+            "run_number": 6
+        },
+        {
+            "id": 26131277391,
+            "project": "project_b",
+            "duration": 26.0,
+            "conclusion": "success",
+            "run_number": 6
+        },
+        {
+            "id": 26131277388,
+            "project": "project_a",
+            "duration": 35.0,
+            "conclusion": "success",
+            "run_number": 6
+        },
+        {
+            "id": 26131078038,
+            "project": "project_b",
+            "duration": 29.0,
+            "conclusion": "success",
+            "run_number": 5
+        },
+        {
+            "id": 26131078034,
+            "project": "project_c",
+            "duration": 20.0,
+            "conclusion": "success",
+            "run_number": 5
+        },
+        {
+            "id": 26131077964,
+            "project": "project_a",
+            "duration": 25.0,
+            "conclusion": "success",
+            "run_number": 5
+        },
+        {
+            "id": 26130973520,
+            "project": "project_b",
+            "duration": 32.0,
+            "conclusion": "success",
+            "run_number": 4
+        },
+        {
+            "id": 26130973486,
+            "project": "project_c",
+            "duration": 24.0,
+            "conclusion": "success",
+            "run_number": 4
+        },
+        {
+            "id": 26130973485,
+            "project": "project_a",
+            "duration": 26.0,
+            "conclusion": "success",
+            "run_number": 4
+        },
+        {
+            "id": 26130824164,
+            "project": "project_b",
+            "duration": 28.0,
+            "conclusion": "success",
+            "run_number": 3
+        },
+        {
+            "id": 26130824089,
+            "project": "project_a",
+            "duration": 28.0,
+            "conclusion": "success",
+            "run_number": 3
+        },
+        {
+            "id": 26130824058,
+            "project": "project_c",
+            "duration": 24.0,
+            "conclusion": "success",
+            "run_number": 3
+        },
+        {
+            "id": 26130779192,
+            "project": "project_b",
+            "duration": 22.0,
+            "conclusion": "success",
+            "run_number": 2
+        },
+        {
+            "id": 26130779191,
+            "project": "project_c",
+            "duration": 41.0,
+            "conclusion": "failure",
+            "run_number": 2
+        },
+        {
+            "id": 26130779187,
+            "project": "project_a",
+            "duration": 20.0,
+            "conclusion": "success",
+            "run_number": 2
+        },
+        {
+            "id": 26128762285,
+            "project": "project_a",
+            "duration": 30.0,
+            "conclusion": "success",
+            "run_number": 1
+        },
+        {
+            "id": 26128762261,
+            "project": "project_b",
+            "duration": 37.0,
+            "conclusion": "success",
+            "run_number": 1
+        },
+        {
+            "id": 26128762240,
+            "project": "project_c",
+            "duration": 19.0,
+            "conclusion": "failure",
+            "run_number": 1
+        }
+    ],
+    "circleci_scraped": [
+        {
+            "id": "d2f8981b-4e6f-4d66-a4b6-03d4fa6b0614",
+            "name": "run-all-benchmarks",
+            "duration": 33.0,
+            "status": "success",
+            "created_at": "2026-05-19T23:21:33Z"
+        },
+        {
+            "id": "e32c4a72-81ba-424f-9b8c-a070e8e784e0",
+            "name": "run-all-benchmarks",
+            "duration": 41.0,
+            "status": "success",
+            "created_at": "2026-05-19T23:21:14Z"
+        },
+        {
+            "id": "f06b6fce-3460-464e-baad-d569e309cc1e",
+            "name": "run-all-benchmarks",
+            "duration": 42.0,
+            "status": "success",
+            "created_at": "2026-05-19T23:15:53Z"
+        },
+        {
+            "id": "b8a6ef71-5386-47e7-a9ba-186c854f5f36",
+            "name": "run-all-benchmarks",
+            "duration": 26.0,
+            "status": "success",
+            "created_at": "2026-05-19T23:13:10Z"
+        },
+        {
+            "id": "ba481e27-7ca6-4174-b180-884abdd14153",
+            "name": "run-all-benchmarks",
+            "duration": 27.0,
+            "status": "success",
+            "created_at": "2026-05-19T23:09:17Z"
+        },
+        {
+            "id": "f0bf9fab-0d8b-4924-92e3-249b895c1039",
+            "name": "run-all-benchmarks",
+            "duration": 27.0,
+            "status": "failed",
+            "created_at": "2026-05-19T23:08:03Z"
+        },
+        {
+            "id": "ceea7d8d-ffb5-4513-8273-a0f69bf16827",
+            "name": "run-all-benchmarks",
+            "duration": 37.0,
+            "status": "failed",
+            "created_at": "2026-05-19T23:04:01Z"
+        }
+    ]
+}
