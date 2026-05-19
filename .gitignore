@@ -9,7 +9,5 @@ venv/
 Thumbs.db
 
 # Ignore large binary files
-*.docx
-*.pdf
 jenkins.war
 
