@@ -1,3 +1,11 @@
+def runCmd(String cmd) {
+    if (isUnix()) {
+        sh cmd
+    } else {
+        bat cmd
+    }
+}
+
 pipeline {
     agent any
 
@@ -12,8 +20,8 @@ pipeline {
             steps {
                 dir('project_a_node_api') {
                     echo 'Running Project A tests...'
-                    sh 'npm install'
-                    sh 'npm test'
+                    runCmd 'npm install'
+                    runCmd 'npm test'
                 }
             }
         }
@@ -22,9 +30,9 @@ pipeline {
             steps {
                 dir('project_b_python_flask') {
                     echo 'Running Project B tests...'
-                    sh 'python -m pip install --upgrade pip'
-                    sh 'pip install -r requirements.txt'
-                    sh 'pytest'
+                    runCmd 'python -m pip install --upgrade pip'
+                    runCmd 'pip install -r requirements.txt'
+                    runCmd 'pytest'
                 }
             }
         }
@@ -35,7 +43,7 @@ pipeline {
                     steps {
                         dir('project_c_microservices/service_auth') {
                             echo 'Building Auth Service Docker Image...'
-                            sh 'docker build -t service_auth:latest .'
+                            runCmd 'docker build -t service_auth:latest .'
                         }
                     }
                 }
@@ -43,7 +51,7 @@ pipeline {
                     steps {
                         dir('project_c_microservices/service_api') {
                             echo 'Building API Service Docker Image...'
-                            sh 'docker build -t service_api:latest .'
+                            runCmd 'docker build -t service_api:latest .'
                         }
                     }
                 }
@@ -51,7 +59,7 @@ pipeline {
                     steps {
                         dir('project_c_microservices/service_web') {
                             echo 'Building Web Service Docker Image...'
-                            sh 'docker build -t service_web:latest .'
+                            runCmd 'docker build -t service_web:latest .'
                         }
                     }
                 }
