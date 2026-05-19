@@ -957,6 +957,71 @@ for p in platforms:
 df_integration = pd.DataFrame(integration_rows)
 df_integration.to_csv('thesis_tables/table_integration_scores.csv', index=False)
 
+# Table 7: Raw Observations (Individual Runs)
+raw_obs_rows = []
+
+# Add Local (Jenkins) Raw Observations
+if use_real_data and real_local_metrics:
+    for key, values in real_local_metrics.items():
+        parts = key.split('_')
+        project_name = f"Project {parts[1].upper()}"
+        condition = parts[2].capitalize()
+        for idx, val in enumerate(values):
+            raw_obs_rows.append({
+                'Source': 'Local Benchmark Execution',
+                'Platform': 'Jenkins',
+                'Project': project_name,
+                'Run Number': idx + 1,
+                'Condition/Profile': condition,
+                'Duration (seconds)': val,
+                'Status': 'Success'
+            })
+
+# Add GitHub Actions Raw Observations
+if use_real_data and real_cloud_metrics and 'github_actions_scraped' in real_cloud_metrics:
+    for run in real_cloud_metrics['github_actions_scraped']:
+        parts = run['project'].split('_')
+        project_name = f"Project {parts[1].upper()}"
+        raw_obs_rows.append({
+            'Source': 'GitHub Actions API Scrape',
+            'Platform': 'GitHub Actions',
+            'Project': project_name,
+            'Run Number': run['run_number'],
+            'Condition/Profile': 'SaaS Cloud Execution',
+            'Duration (seconds)': run['duration'],
+            'Status': run['conclusion'].capitalize()
+        })
+
+# Add CircleCI Raw Observations
+if use_real_data and real_cloud_metrics and 'circleci_scraped' in real_cloud_metrics:
+    for idx, run in enumerate(reversed(real_cloud_metrics['circleci_scraped'])):
+        raw_obs_rows.append({
+            'Source': 'CircleCI API Scrape',
+            'Platform': 'CircleCI',
+            'Project': 'All Workflows',
+            'Run Number': idx + 1,
+            'Condition/Profile': 'SaaS Cloud Execution (Total)',
+            'Duration (seconds)': run['duration'],
+            'Status': run['status'].capitalize()
+        })
+
+# If real data is not used, simulate raw data rows for completeness
+if not raw_obs_rows:
+    for p in platforms:
+        for run in range(1, 11):
+            raw_obs_rows.append({
+                'Source': 'Simulated Run Data',
+                'Platform': p,
+                'Project': 'Project A',
+                'Run Number': run,
+                'Condition/Profile': 'Cold',
+                'Duration (seconds)': 100.0 + np.random.normal(0, 5),
+                'Status': 'Success'
+            })
+
+df_raw_obs = pd.DataFrame(raw_obs_rows)
+df_raw_obs.to_csv('thesis_tables/table_raw_observations.csv', index=False)
+
 # ---------------------------------------------------------
 # STEP 5 & 6: CHAPTER TEXT GENERATION
 # ---------------------------------------------------------

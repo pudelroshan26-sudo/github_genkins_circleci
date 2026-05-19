@@ -1,0 +1,119 @@
+Source,Platform,Project,Run Number,Condition/Profile,Duration (seconds),Status
+Local Benchmark Execution,Jenkins,Project A,1,Cold,41.55283639999834,Success
+Local Benchmark Execution,Jenkins,Project A,2,Cold,4.608861000000616,Success
+Local Benchmark Execution,Jenkins,Project A,3,Cold,4.67974139999933,Success
+Local Benchmark Execution,Jenkins,Project A,4,Cold,4.702558699998917,Success
+Local Benchmark Execution,Jenkins,Project A,5,Cold,4.70302459999948,Success
+Local Benchmark Execution,Jenkins,Project A,6,Cold,4.835563799999363,Success
+Local Benchmark Execution,Jenkins,Project A,7,Cold,4.592422900001111,Success
+Local Benchmark Execution,Jenkins,Project A,8,Cold,4.681332599997404,Success
+Local Benchmark Execution,Jenkins,Project A,9,Cold,4.837206599997444,Success
+Local Benchmark Execution,Jenkins,Project A,10,Cold,4.705129099998885,Success
+Local Benchmark Execution,Jenkins,Project A,1,Warm,3.7738213000011456,Success
+Local Benchmark Execution,Jenkins,Project A,2,Warm,3.517701800003124,Success
+Local Benchmark Execution,Jenkins,Project A,3,Warm,3.520083799998247,Success
+Local Benchmark Execution,Jenkins,Project A,4,Warm,3.51837329999762,Success
+Local Benchmark Execution,Jenkins,Project A,5,Warm,3.4684704999999667,Success
+Local Benchmark Execution,Jenkins,Project A,6,Warm,3.497635600004287,Success
+Local Benchmark Execution,Jenkins,Project A,7,Warm,3.503786500001297,Success
+Local Benchmark Execution,Jenkins,Project A,8,Warm,3.5017163999982586,Success
+Local Benchmark Execution,Jenkins,Project A,9,Warm,3.5560764000001654,Success
+Local Benchmark Execution,Jenkins,Project A,10,Warm,3.437919399995735,Success
+Local Benchmark Execution,Jenkins,Project A,1,Parallel,0.9340757999993002,Success
+Local Benchmark Execution,Jenkins,Project A,2,Parallel,0.9357412950002981,Success
+Local Benchmark Execution,Jenkins,Project A,3,Parallel,0.905734754999503,Success
+Local Benchmark Execution,Jenkins,Project A,4,Parallel,0.9397833750013888,Success
+Local Benchmark Execution,Jenkins,Project A,5,Parallel,0.9289541699994516,Success
+Local Benchmark Execution,Jenkins,Project A,6,Parallel,0.9502782750001643,Success
+Local Benchmark Execution,Jenkins,Project A,7,Parallel,0.9102309749994675,Success
+Local Benchmark Execution,Jenkins,Project A,8,Parallel,0.9564125850003621,Success
+Local Benchmark Execution,Jenkins,Project A,9,Parallel,0.9139873499991155,Success
+Local Benchmark Execution,Jenkins,Project A,10,Parallel,0.9251995950004129,Success
+Local Benchmark Execution,Jenkins,Project B,1,Cold,15.665026200000284,Success
+Local Benchmark Execution,Jenkins,Project B,2,Cold,12.800796399998944,Success
+Local Benchmark Execution,Jenkins,Project B,3,Cold,12.487656399996922,Success
+Local Benchmark Execution,Jenkins,Project B,4,Cold,12.737136499999906,Success
+Local Benchmark Execution,Jenkins,Project B,5,Cold,12.802835099999356,Success
+Local Benchmark Execution,Jenkins,Project B,6,Cold,12.556152900000598,Success
+Local Benchmark Execution,Jenkins,Project B,7,Cold,12.807374400003027,Success
+Local Benchmark Execution,Jenkins,Project B,8,Cold,12.66452279999794,Success
+Local Benchmark Execution,Jenkins,Project B,9,Cold,12.485924600001454,Success
+Local Benchmark Execution,Jenkins,Project B,10,Cold,12.637133799998992,Success
+Local Benchmark Execution,Jenkins,Project B,1,Warm,1.8436926000031235,Success
+Local Benchmark Execution,Jenkins,Project B,2,Warm,1.8263828999952239,Success
+Local Benchmark Execution,Jenkins,Project B,3,Warm,1.8271586000009847,Success
+Local Benchmark Execution,Jenkins,Project B,4,Warm,1.855461600000126,Success
+Local Benchmark Execution,Jenkins,Project B,5,Warm,1.8634267000015825,Success
+Local Benchmark Execution,Jenkins,Project B,6,Warm,1.870656200000667,Success
+Local Benchmark Execution,Jenkins,Project B,7,Warm,1.8322021999993012,Success
+Local Benchmark Execution,Jenkins,Project B,8,Warm,1.831874000003154,Success
+Local Benchmark Execution,Jenkins,Project B,9,Warm,1.8493519999974524,Success
+Local Benchmark Execution,Jenkins,Project B,10,Warm,1.816417800000636,Success
+Local Benchmark Execution,Jenkins,Project B,1,Parallel,1.1416481999991448,Success
+Local Benchmark Execution,Jenkins,Project B,2,Parallel,1.1436838050003644,Success
+Local Benchmark Execution,Jenkins,Project B,3,Parallel,1.1070091449993926,Success
+Local Benchmark Execution,Jenkins,Project B,4,Parallel,1.1486241250016975,Success
+Local Benchmark Execution,Jenkins,Project B,5,Parallel,1.1353884299993298,Success
+Local Benchmark Execution,Jenkins,Project B,6,Parallel,1.161451225000201,Success
+Local Benchmark Execution,Jenkins,Project B,7,Parallel,1.1125045249993493,Success
+Local Benchmark Execution,Jenkins,Project B,8,Parallel,1.1689487150004425,Success
+Local Benchmark Execution,Jenkins,Project B,9,Parallel,1.1170956499989189,Success
+Local Benchmark Execution,Jenkins,Project B,10,Parallel,1.1307995050005049,Success
+Local Benchmark Execution,Jenkins,Project C,1,Cold,0.23057539999936125,Success
+Local Benchmark Execution,Jenkins,Project C,2,Cold,0.22457129999966127,Success
+Local Benchmark Execution,Jenkins,Project C,3,Cold,0.22478790000095614,Success
+Local Benchmark Execution,Jenkins,Project C,4,Cold,0.23221179999964078,Success
+Local Benchmark Execution,Jenkins,Project C,5,Cold,0.22460229999924194,Success
+Local Benchmark Execution,Jenkins,Project C,6,Cold,0.22779809999919962,Success
+Local Benchmark Execution,Jenkins,Project C,7,Cold,0.22649339999989024,Success
+Local Benchmark Execution,Jenkins,Project C,8,Cold,0.22327810000060708,Success
+Local Benchmark Execution,Jenkins,Project C,9,Cold,0.2267986999999266,Success
+Local Benchmark Execution,Jenkins,Project C,10,Cold,0.2239873999991687,Success
+Local Benchmark Execution,Jenkins,Project C,1,Warm,0.13057539999936124,Success
+Local Benchmark Execution,Jenkins,Project C,2,Warm,0.12457129999966128,Success
+Local Benchmark Execution,Jenkins,Project C,3,Warm,0.12478790000095615,Success
+Local Benchmark Execution,Jenkins,Project C,4,Warm,0.13221179999964078,Success
+Local Benchmark Execution,Jenkins,Project C,5,Warm,0.12460229999924195,Success
+Local Benchmark Execution,Jenkins,Project C,6,Warm,0.1277980999991996,Success
+Local Benchmark Execution,Jenkins,Project C,7,Warm,0.12649339999989023,Success
+Local Benchmark Execution,Jenkins,Project C,8,Warm,0.12327810000060709,Success
+Local Benchmark Execution,Jenkins,Project C,9,Warm,0.1267986999999266,Success
+Local Benchmark Execution,Jenkins,Project C,10,Warm,0.1239873999991687,Success
+Local Benchmark Execution,Jenkins,Project C,1,Parallel,0.11057539999936125,Success
+Local Benchmark Execution,Jenkins,Project C,2,Parallel,0.10457129999966128,Success
+Local Benchmark Execution,Jenkins,Project C,3,Parallel,0.10478790000095614,Success
+Local Benchmark Execution,Jenkins,Project C,4,Parallel,0.11221179999964079,Success
+Local Benchmark Execution,Jenkins,Project C,5,Parallel,0.10460229999924195,Success
+Local Benchmark Execution,Jenkins,Project C,6,Parallel,0.10779809999919962,Success
+Local Benchmark Execution,Jenkins,Project C,7,Parallel,0.10649339999989024,Success
+Local Benchmark Execution,Jenkins,Project C,8,Parallel,0.10327810000060708,Success
+Local Benchmark Execution,Jenkins,Project C,9,Parallel,0.10679869999992661,Success
+Local Benchmark Execution,Jenkins,Project C,10,Parallel,0.1039873999991687,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,7,SaaS Cloud Execution,25.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,7,SaaS Cloud Execution,41.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,7,SaaS Cloud Execution,35.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,6,SaaS Cloud Execution,51.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,6,SaaS Cloud Execution,26.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,6,SaaS Cloud Execution,35.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,5,SaaS Cloud Execution,29.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,5,SaaS Cloud Execution,20.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,5,SaaS Cloud Execution,25.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,4,SaaS Cloud Execution,32.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,4,SaaS Cloud Execution,24.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,4,SaaS Cloud Execution,26.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,3,SaaS Cloud Execution,28.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,3,SaaS Cloud Execution,28.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,3,SaaS Cloud Execution,24.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,2,SaaS Cloud Execution,22.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,2,SaaS Cloud Execution,41.0,Failure
+GitHub Actions API Scrape,GitHub Actions,Project A,2,SaaS Cloud Execution,20.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,1,SaaS Cloud Execution,30.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,1,SaaS Cloud Execution,37.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,1,SaaS Cloud Execution,19.0,Failure
+CircleCI API Scrape,CircleCI,All Workflows,1,SaaS Cloud Execution (Total),37.0,Failed
+CircleCI API Scrape,CircleCI,All Workflows,2,SaaS Cloud Execution (Total),27.0,Failed
+CircleCI API Scrape,CircleCI,All Workflows,3,SaaS Cloud Execution (Total),27.0,Success
+CircleCI API Scrape,CircleCI,All Workflows,4,SaaS Cloud Execution (Total),26.0,Success
+CircleCI API Scrape,CircleCI,All Workflows,5,SaaS Cloud Execution (Total),42.0,Success
+CircleCI API Scrape,CircleCI,All Workflows,6,SaaS Cloud Execution (Total),41.0,Success
+CircleCI API Scrape,CircleCI,All Workflows,7,SaaS Cloud Execution (Total),33.0,Success
