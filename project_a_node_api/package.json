@@ -1,0 +1,17 @@
+{
+  "name": "project_a_node_api",
+  "version": "1.0.0",
+  "description": "Benchmark Project A: Simple Node.js REST API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  }
+}

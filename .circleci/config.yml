@@ -1,0 +1,99 @@
+version: 2.1
+
+jobs:
+  test-node-api:
+    docker:
+      - image: cimg/node:20.11.0
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-node-deps-{{ checksum "project_a_node_api/package.json" }}
+            - v1-node-deps-
+      - run:
+          name: Install Project A dependencies
+          command: |
+            cd project_a_node_api
+            npm install
+      - save_cache:
+          paths:
+            - project_a_node_api/node_modules
+          key: v1-node-deps-{{ checksum "project_a_node_api/package.json" }}
+      - run:
+          name: Run Project A test suite
+          command: |
+            cd project_a_node_api
+            npm test
+
+  test-python-flask:
+    docker:
+      - image: cimg/python:3.10.12
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-python-deps-{{ checksum "project_b_python_flask/requirements.txt" }}
+            - v1-python-deps-
+      - run:
+          name: Install Project B dependencies
+          command: |
+            cd project_b_python_flask
+            python -m pip install --upgrade pip
+            pip install -r requirements.txt
+      - save_cache:
+          paths:
+            - ~/.cache/pip
+          key: v1-python-deps-{{ checksum "project_b_python_flask/requirements.txt" }}
+      - run:
+          name: Run Project B test suite
+          command: |
+            cd project_b_python_flask
+            pytest
+
+  build-micro-auth:
+    docker:
+      - image: cimg/python:3.10.12
+    steps:
+      - checkout
+      - setup_remote_docker:
+          version: 20.10.14
+      - run:
+          name: Build Auth Service
+          command: |
+            cd project_c_microservices/service_auth
+            docker build -t service_auth:latest .
+
+  build-micro-api:
+    docker:
+      - image: cimg/node:20.11.0
+    steps:
+      - checkout
+      - setup_remote_docker:
+          version: 20.10.14
+      - run:
+          name: Build API Service
+          command: |
+            cd project_c_microservices/service_api
+            docker build -t service_api:latest .
+
+  build-micro-web:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - setup_remote_docker:
+          version: 20.10.14
+      - run:
+          name: Build Web Service
+          command: |
+            cd project_c_microservices/service_web
+            docker build -t service_web:latest .
+
+workflows:
+  run-all-benchmarks:
+    jobs:
+      - test-node-api
+      - test-python-flask
+      - build-micro-auth
+      - build-micro-api
+      - build-micro-web

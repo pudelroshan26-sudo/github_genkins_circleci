@@ -1,0 +1,35 @@
+pipeline {
+    agent any
+
+    tools {
+        nodejs 'node'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        stage('Install Dependencies') {
+            steps {
+                dir('project_a_node_api') {
+                    sh 'npm install'
+                }
+            }
+        }
+        stage('Run Tests') {
+            steps {
+                dir('project_a_node_api') {
+                    sh 'npm test'
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            cleanWs()
+        }
+    }
+}

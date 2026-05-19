@@ -1,0 +1,59 @@
+name: Microservices Docker Build Benchmark
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-auth:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Build Auth Service Image
+      uses: docker/build-push-action@v5
+      with:
+        context: ./project_c_microservices/service_auth
+        file: ./project_c_microservices/service_auth/Dockerfile
+        push: false
+        tags: service_auth:latest
+
+  build-api:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Build API Service Image
+      uses: docker/build-push-action@v5
+      with:
+        context: ./project_c_microservices/service_api
+        file: ./project_c_microservices/service_api/Dockerfile
+        push: false
+        tags: service_api:latest
+
+  build-web:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Build Web Service Image
+      uses: docker/build-push-action@v5
+      with:
+        context: ./project_c_microservices/service_web
+        file: ./project_c_microservices/service_web/Dockerfile
+        push: false
+        tags: service_web:latest

@@ -1,0 +1,13 @@
+# Ignore dependencies and OS files
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+
+# Ignore large binary files
+*.docx
+*.pdf

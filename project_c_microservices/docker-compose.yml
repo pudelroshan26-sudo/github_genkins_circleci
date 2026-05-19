@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  auth-service:
+    build:
+      context: ./service_auth
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+
+  api-service:
+    build:
+      context: ./service_api
+      dockerfile: Dockerfile
+    ports:
+      - "5002:5002"
+
+  web-service:
+    build:
+      context: ./service_web
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"

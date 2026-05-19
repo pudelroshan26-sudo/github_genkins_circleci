@@ -1,0 +1,35 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@2.1.1
+
+jobs:
+  test:
+    docker:
+      - image: cimg/python:3.10.12
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "project_b_python_flask/requirements.txt" }}
+            - v1-dependencies-
+      - run:
+          name: Install dependencies
+          command: |
+            cd project_b_python_flask
+            python -m pip install --upgrade pip
+            pip install -r requirements.txt
+      - save_cache:
+          paths:
+            - ~/.cache/pip
+          key: v1-dependencies-{{ checksum "project_b_python_flask/requirements.txt" }}
+      - run:
+          name: Run test suite
+          command: |
+            cd project_b_python_flask
+            pytest
+
+workflows:
+  build-and-test:
+    jobs:
+      - test

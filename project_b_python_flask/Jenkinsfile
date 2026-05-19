@@ -1,0 +1,39 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        stage('Setup Environment') {
+            steps {
+                dir('project_b_python_flask') {
+                    sh '''
+                    python3 -m venv venv
+                    . venv/bin/activate
+                    pip install --upgrade pip
+                    pip install -r requirements.txt
+                    '''
+                }
+            }
+        }
+        stage('Run Tests') {
+            steps {
+                dir('project_b_python_flask') {
+                    sh '''
+                    . venv/bin/activate
+                    pytest
+                    '''
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            cleanWs()
+        }
+    }
+}

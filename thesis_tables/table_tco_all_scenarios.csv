@@ -1,0 +1,10 @@
+Platform,Team Size,Low Usage (5/day),Medium Usage (25/day),High Usage (100/day)
+GitHub Actions,Small,0,16,128
+GitHub Actions,Medium,0,64,420
+GitHub Actions,Large,45,285,1850
+CircleCI,Small,0,30,185
+CircleCI,Medium,15,95,580
+CircleCI,Large,60,340,2200
+Jenkins,Small,85,110,145
+Jenkins,Medium,285,320,385
+Jenkins,Large,650,720,980

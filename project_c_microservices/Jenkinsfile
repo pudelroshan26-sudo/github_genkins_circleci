@@ -1,0 +1,42 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        stage('Build Services in Parallel') {
+            parallel {
+                stage('Build Auth Service') {
+                    steps {
+                        dir('project_c_microservices/service_auth') {
+                            sh 'docker build -t service_auth:latest .'
+                        }
+                    }
+                }
+                stage('Build API Service') {
+                    steps {
+                        dir('project_c_microservices/service_api') {
+                            sh 'docker build -t service_api:latest .'
+                        }
+                    }
+                }
+                stage('Build Web Service') {
+                    steps {
+                        dir('project_c_microservices/service_web') {
+                            sh 'docker build -t service_web:latest .'
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            cleanWs()
+        }
+    }
+}

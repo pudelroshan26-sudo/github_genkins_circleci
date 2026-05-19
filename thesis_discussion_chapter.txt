@@ -1,0 +1,80 @@
+# CHAPTER 6: DISCUSSION
+
+## 6.1 Overview of Discussion
+This chapter interprets the empirical findings detailed in Chapter 5, placing them in the context of modern software engineering practices, DORA metrics, and existing literature. The comparative analysis of GitHub Actions, CircleCI, and Jenkins reveals that the choice of a CI/CD platform is not a simple technical decision, but rather a strategic organizational choice that involves trade-offs between build execution speed, reliability, development team productivity, and total cost of ownership. The following sections explore these dimensions, answering the primary and sub-research questions, providing context-specific recommendations, and outlining the limitations of the study.
+
+---
+
+## 6.2 Interpretation of Performance Findings
+The performance benchmarks show that CircleCI consistently outperforms both GitHub Actions and Jenkins in warm and parallel build speeds, particularly under containerized environments (Project C). Under Project C parallel builds, CircleCI achieved a mean execution time of 77.73 seconds compared to GitHub Actions' 100.98 seconds and Jenkins' 225.71 seconds. This represents an empirical validation of CircleCI's specialized Docker caching layer and RAM disk optimization, which minimize container layer download times.
+
+In the context of the DevOps Research and Assessment (DORA) metrics, specifically **Lead Time for Changes** (the time it takes for code to go from commit to production), build performance is a direct bottleneck [1]. A developer waiting for a 6-minute build (Jenkins cold microservice: 375.79s) is significantly more likely to experience context switching than a developer waiting for a 1.5-minute build (CircleCI parallel microservice: 77.73s). The speedups obtained from parallelizing builds—ranging from 16.7% to 17.6%—highlight that optimizing pipeline configurations is as critical as the choice of the platform itself.
+
+---
+
+## 6.3 Reliability and Its Implications
+Reliability is a cornerstone of pipeline execution trust. The failure rates observed in this study (GitHub Actions: 3.3%, CircleCI: 6.7%, Jenkins: 16.7%) indicate that self-hosted environments (Jenkins) introduce substantial stability risks compared to managed SaaS platforms. In Jenkins, the majority of failures were caused by local executor resource starvation and plugin dependency conflicts.
+
+According to the DORA framework, pipeline reliability directly influences both **Change Failure Rate** and **Mean Time to Recovery (MTTR)** [1]. When a build fails due to a flaky test or runner setup issue, it delays release verification and increases developer fatigue. Furthermore, the mean MTTR for Jenkins (18.32 minutes) was more than four times higher than that of GitHub Actions (4.37 minutes). This disparity is attributed to the quality of feedback loops. GitHub Actions provides inline code annotations and localized step-level logs, allowing developers to isolate issues immediately. In contrast, Jenkins requires parsing extensive console logs, often containing thousands of lines of verbose system and plugin output.
+
+---
+
+## 6.4 Cost-Performance Trade-offs
+The total cost of ownership (TCO) analysis reveals a classic trade-off: SaaS platforms (GitHub Actions, CircleCI) offer low initial setup and operational costs, but scale exponentially with build volume and team size. Jenkins, conversely, has high initial hosting and configuration costs but remains flat as usage increases.
+
+As shown in Figure 11, Jenkins represents the most economical option under high-usage scenarios for medium and large teams. For a large team with high usage, GitHub Actions costs $1,850/month and CircleCI costs $2,200/month, compared to Jenkins' hosting fee of $980/month. However, this study highlights that this cost advantage is a "developer tax." The time spent by engineers maintaining Jenkins plugins, patching security vulnerabilities, and managing server infrastructure is a major cost factor. For organizations with high build volumes, the cost of a dedicated DevOps engineer to maintain Jenkins can quickly outweigh the savings in cloud-runner minute fees.
+
+---
+
+## 6.5 Usability and Developer Experience
+The System Usability Scale (SUS) results indicate a stark division in developer experience. GitHub Actions' "Excellent" score (SUS = 81.9) and CircleCI's "Good" score (SUS = 77.8) reflect a shift towards developer-centric tool design. These platforms utilize declarative YAML structures and offer extensive marketplace libraries to share steps.
+
+Jenkins' "Poor" usability score (SUS = 53.1) highlights the friction of legacy tools. Writing Groovy-based Jenkinsfiles requires specialized knowledge, and configuring credentials or node runners requires navigating a complex admin UI. In modern software engineering, poor usability represents adoption risk. When pipelines are difficult to modify, developers avoid updating them, leading to configuration drift and security vulnerabilities.
+
+---
+
+## 6.6 Integration Ecosystem Implications
+The integration scores highlight the lock-in risks of modern platforms. GitHub Actions scores a perfect 10/10 for VCS Integration because it is built directly into GitHub. While this provides a seamless user experience, it creates a tight coupling. Moving away from GitHub Actions requires moving the entire source code repository, creating a high switching cost.
+
+CircleCI and Jenkins offer greater VCS flexibility, with CircleCI supporting multiple Git providers and Jenkins integrating with virtually any source control system. However, Jenkins requires installing and maintaining community plugins for basic integrations, which introduces security risks. The open-source nature of Jenkins' plugins means they are frequently abandoned, creating a long-term maintenance risk for the organization.
+
+---
+
+## 6.7 Answering the Research Questions
+
+### Primary RQ: How do the platforms compare overall?
+The platforms represent three distinct approaches to CI/CD. GitHub Actions is the best all-in-one solution for teams already using GitHub. CircleCI is the best platform for teams prioritizing raw performance and Docker optimization. Jenkins remains the tool of choice for organizations requiring complete control over their infrastructure, data sovereignty, or legacy integrations.
+
+### SRQ1: Are there measurable performance differences?
+Yes. CircleCI is statistically the fastest platform, particularly for warm and parallel build runs. Jenkins is statistically the slowest, due to runner initialization and lack of default cache optimizations.
+
+### SRQ2: How does TCO vary across organization contexts?
+For small and medium teams with low-to-medium usage, cloud-managed SaaS platforms (GHA, CircleCI) are the most economical choice. For large teams with high usage volumes, Jenkins is the cheapest option on a hosting basis, but introduces hidden maintenance labor costs.
+
+### SRQ3: What factors influence developer productivity?
+Productivity is influenced by pipeline reliability, MTTR, and configuration ease. GitHub Actions and CircleCI optimize these through declarative YAML, low MTTR (GHA = 4.37 min), and clean failure interfaces, whereas Jenkins introduces friction through plugin maintenance and complex Groovy syntax.
+
+### SRQ4: Which platform should be chosen for which context?
+The choice is context-dependent: GitHub Actions for GitHub-integrated teams, CircleCI for high-performance and container-intensive applications, and Jenkins for self-hosted enterprise configurations.
+
+---
+
+## 6.8 Context-Specific Recommendations
+1. **GitHub Actions**: Recommended for small-to-medium startups and enterprise organizations already hosted on GitHub.
+2. **CircleCI**: Recommended for fast-growing mid-size teams running complex, Docker-heavy build matrices.
+3. **Jenkins**: Recommended for enterprise organizations with strict data governance, custom on-premise infrastructure, or legacy systems.
+
+---
+
+## 6.9 Comparison with Existing Literature
+The findings align with Singh et al. [2], who noted that SaaS-based CI/CD platforms significantly reduce time-to-market compared to self-hosted tools. They also align with Hilton et al. [3], who found that ease of pipeline configuration is a primary driver of CI/CD adoption. Our study extends this by providing empirical statistical verification of build durations and usability scores.
+
+---
+
+## 6.10 Limitations of the Study
+This study has several limitations:
+1. **Infrastructure Uniformity**: Jenkins was evaluated on a single virtual server, whereas cloud platforms run on massive, distributed environments.
+2. **Simulated Usability**: SUS scores were gathered from a sample of 15 developers, which may not represent all developer profiles.
+3. **Project Scope**: The benchmark projects, while representative, do not capture the complexity of massive enterprise monorepos.
+
+Despite these limitations, the statistical significance of the results provides a reliable framework for CI/CD platform evaluation.

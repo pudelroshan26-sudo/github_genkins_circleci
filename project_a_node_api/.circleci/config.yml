@@ -1,0 +1,34 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.1.0
+
+jobs:
+  test:
+    docker:
+      - image: cimg/node:20.11.0
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "project_a_node_api/package.json" }}
+            - v1-dependencies-
+      - run:
+          name: Install dependencies
+          command: |
+            cd project_a_node_api
+            npm install
+      - save_cache:
+          paths:
+            - project_a_node_api/node_modules
+          key: v1-dependencies-{{ checksum "project_a_node_api/package.json" }}
+      - run:
+          name: Run test suite
+          command: |
+            cd project_a_node_api
+            npm test
+
+workflows:
+  build-and-test:
+    jobs:
+      - test

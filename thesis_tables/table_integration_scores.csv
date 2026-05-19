@@ -1,0 +1,4 @@
+Platform,VCS Integration,Cloud Deployments,Docker Support,Security Contexts,Notification Services,Weighted Integration Score
+GitHub Actions,10,9,8,9,9,9.0
+CircleCI,8,8,10,7,8,8.2
+Jenkins,9,7,7,8,7,7.6

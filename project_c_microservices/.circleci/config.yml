@@ -1,0 +1,48 @@
+version: 2.1
+
+jobs:
+  build-auth:
+    docker:
+      - image: cimg/node:20.11.0
+    steps:
+      - checkout
+      - setup_remote_docker:
+          version: 20.10.14
+      - run:
+          name: Build Auth Service
+          command: |
+            cd project_c_microservices/service_auth
+            docker build -t service_auth:latest .
+
+  build-api:
+    docker:
+      - image: cimg/python:3.10.12
+    steps:
+      - checkout
+      - setup_remote_docker:
+          version: 20.10.14
+      - run:
+          name: Build API Service
+          command: |
+            cd project_c_microservices/service_api
+            docker build -t service_api:latest .
+
+  build-web:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - setup_remote_docker:
+          version: 20.10.14
+      - run:
+          name: Build Web Service
+          command: |
+            cd project_c_microservices/service_web
+            docker build -t service_web:latest .
+
+workflows:
+  parallel-builds:
+    jobs:
+      - build-auth
+      - build-api
+      - build-web
