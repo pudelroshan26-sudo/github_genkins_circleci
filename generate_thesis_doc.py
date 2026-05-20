@@ -151,8 +151,13 @@ def create_document():
         add_body_paragraph("[Error: thesis_discussion_chapter.txt not found. Run thesis_analysis.py first.]")
 
     # Save
-    doc.save(output_file)
-    print(f"Document compiled successfully: {output_file}")
+    try:
+        doc.save(output_file)
+        print(f"Document compiled successfully: {output_file}")
+    except PermissionError:
+        alternative_file = os.path.join(workspace_dir, "DevOps_Thesis_Report_v2.docx")
+        doc.save(alternative_file)
+        print(f"Permission denied on original file (probably open in Word). Saved as alternative: {alternative_file}")
 
 if __name__ == "__main__":
     create_document()

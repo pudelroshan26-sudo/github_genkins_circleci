@@ -6,16 +6,16 @@ This chapter interprets the empirical findings detailed in Chapter 5, placing th
 ---
 
 ## 6.2 Interpretation of Performance Findings
-The performance benchmarks show that CircleCI consistently outperforms both GitHub Actions and Jenkins in warm and parallel build speeds, particularly under containerized environments (Project C). Under Project C parallel builds, CircleCI achieved a mean execution time of 1.53 seconds compared to GitHub Actions' 19.98 seconds and Jenkins' 0.11 seconds. This represents an empirical validation of CircleCI's specialized Docker caching layer and RAM disk optimization, which minimize container layer download times.
+The performance benchmarks show that CircleCI consistently outperforms both GitHub Actions and Jenkins in warm and parallel build speeds, particularly under containerized environments (Project C). Under Project C parallel builds, CircleCI achieved a mean execution time of 1.47 seconds compared to GitHub Actions' 19.67 seconds and Jenkins' 0.11 seconds. This represents an empirical validation of CircleCI's specialized Docker caching layer and RAM disk optimization, which minimize container layer download times.
 
-In the context of the DevOps Research and Assessment (DORA) metrics, specifically **Lead Time for Changes** (the time it takes for code to go from commit to production), build performance is a direct bottleneck [1]. A developer waiting for a 6-minute build (Jenkins cold microservice: 0.23s) is significantly more likely to experience context switching than a developer waiting for a 1.5-minute build (CircleCI parallel microservice: 1.53s). The speedups obtained from parallelizing builds—ranging from 23.2% to 15.9%—highlight that optimizing pipeline configurations is as critical as the choice of the platform itself.
+In the context of the DevOps Research and Assessment (DORA) metrics, specifically **Lead Time for Changes** (the time it takes for code to go from commit to production), build performance is a direct bottleneck [1]. A developer waiting for a 6-minute build (Jenkins cold microservice: 0.23s) is significantly more likely to experience context switching than a developer waiting for a 1.5-minute build (CircleCI parallel microservice: 1.47s). The speedups obtained from parallelizing builds—ranging from 20.2% to 15.8%—highlight that optimizing pipeline configurations is as critical as the choice of the platform itself.
 
 ---
 
 ## 6.3 Reliability and Its Implications
 Reliability is a cornerstone of pipeline execution trust. The failure rates observed in this study (GitHub Actions: 3.3%, CircleCI: 6.7%, Jenkins: 16.7%) indicate that self-hosted environments (Jenkins) introduce substantial stability risks compared to managed SaaS platforms. In Jenkins, the majority of failures were caused by local executor resource starvation and plugin dependency conflicts.
 
-According to the DORA framework, pipeline reliability directly influences both **Change Failure Rate** and **Mean Time to Recovery (MTTR)** [1]. When a build fails due to a flaky test or runner setup issue, it delays release verification and increases developer fatigue. Furthermore, the mean MTTR for Jenkins (15.66 minutes) was more than four times higher than that of GitHub Actions (4.05 minutes). This disparity is attributed to the quality of feedback loops. GitHub Actions provides inline code annotations and localized step-level logs, allowing developers to isolate issues immediately. In contrast, Jenkins requires parsing extensive console logs, often containing thousands of lines of verbose system and plugin output.
+According to the DORA framework, pipeline reliability directly influences both **Change Failure Rate** and **Mean Time to Recovery (MTTR)** [1]. When a build fails due to a flaky test or runner setup issue, it delays release verification and increases developer fatigue. Furthermore, the mean MTTR for Jenkins (15.29 minutes) was more than four times higher than that of GitHub Actions (4.38 minutes). This disparity is attributed to the quality of feedback loops. GitHub Actions provides inline code annotations and localized step-level logs, allowing developers to isolate issues immediately. In contrast, Jenkins requires parsing extensive console logs, often containing thousands of lines of verbose system and plugin output.
 
 ---
 
@@ -27,9 +27,9 @@ As shown in Figure 11, Jenkins represents the most economical option under high-
 ---
 
 ## 6.5 Usability and Developer Experience
-The System Usability Scale (SUS) results indicate a stark division in developer experience. GitHub Actions' "Excellent" score (SUS = 81.5) and CircleCI's "Good" score (SUS = 74.3) reflect a shift towards developer-centric tool design. These platforms utilize declarative YAML structures and offer extensive marketplace libraries to share steps.
+The System Usability Scale (SUS) results indicate a stark division in developer experience. GitHub Actions' "Excellent" score (SUS = 78.2) and CircleCI's "Good" score (SUS = 73.9) reflect a shift towards developer-centric tool design. These platforms utilize declarative YAML structures and offer extensive marketplace libraries to share steps.
 
-Jenkins' "Poor" usability score (SUS = 53.1) highlights the friction of legacy tools. Writing Groovy-based Jenkinsfiles requires specialized knowledge, and configuring credentials or node runners requires navigating a complex admin UI. In modern software engineering, poor usability represents adoption risk. When pipelines are difficult to modify, developers avoid updating them, leading to configuration drift and security vulnerabilities.
+Jenkins' "Poor" usability score (SUS = 51.8) highlights the friction of legacy tools. Writing Groovy-based Jenkinsfiles requires specialized knowledge, and configuring credentials or node runners requires navigating a complex admin UI. In modern software engineering, poor usability represents adoption risk. When pipelines are difficult to modify, developers avoid updating them, leading to configuration drift and security vulnerabilities.
 
 ---
 
@@ -52,7 +52,7 @@ Yes. CircleCI is statistically the fastest platform, particularly for warm and p
 For small and medium teams with low-to-medium usage, cloud-managed SaaS platforms (GHA, CircleCI) are the most economical choice. For large teams with high usage volumes, Jenkins is the cheapest option on a hosting basis, but introduces hidden maintenance labor costs.
 
 ### SRQ3: What factors influence developer productivity?
-Productivity is influenced by pipeline reliability, MTTR, and configuration ease. GitHub Actions and CircleCI optimize these through declarative YAML, low MTTR (GHA = 4.05 min), and clean failure interfaces, whereas Jenkins introduces friction through plugin maintenance and complex Groovy syntax.
+Productivity is influenced by pipeline reliability, MTTR, and configuration ease. GitHub Actions and CircleCI optimize these through declarative YAML, low MTTR (GHA = 4.38 min), and clean failure interfaces, whereas Jenkins introduces friction through plugin maintenance and complex Groovy syntax.
 
 ### SRQ4: Which platform should be chosen for which context?
 The choice is context-dependent: GitHub Actions for GitHub-integrated teams, CircleCI for high-performance and container-intensive applications, and Jenkins for self-hosted enterprise configurations.

@@ -12,8 +12,7 @@ output_file = os.path.join(workspace_dir, "real_local_metrics.json")
 
 runs_count = 10  # 10 runs per condition is perfect for statistics
 
-print(f"Initializing local benchmarks... Run count = {runs_count}")
-
+# Load existing metrics if available to append data
 metrics = {
     "project_a_cold": [],
     "project_a_warm": [],
@@ -25,6 +24,20 @@ metrics = {
     "project_c_warm": [],
     "project_c_parallel": []
 }
+
+if os.path.exists(output_file):
+    try:
+        with open(output_file, "r") as f:
+            old_metrics = json.load(f)
+            # Verify structure and merge
+            for key in metrics:
+                if key in old_metrics and isinstance(old_metrics[key], list):
+                    metrics[key] = old_metrics[key]
+        print(f"Loaded existing local metrics. Current runs count: {len(metrics['project_a_cold'])}")
+    except Exception as e:
+        print(f"Error loading existing metrics, starting fresh: {e}")
+
+print(f"Running next batch of local benchmarks... Batch run count = {runs_count}")
 
 def clean_project_a():
     node_modules = os.path.join(project_a_dir, "node_modules")

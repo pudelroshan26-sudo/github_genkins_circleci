@@ -9,6 +9,16 @@ Local Benchmark Execution,Jenkins,Project A,7,Cold,4.592422900001111,Success
 Local Benchmark Execution,Jenkins,Project A,8,Cold,4.681332599997404,Success
 Local Benchmark Execution,Jenkins,Project A,9,Cold,4.837206599997444,Success
 Local Benchmark Execution,Jenkins,Project A,10,Cold,4.705129099998885,Success
+Local Benchmark Execution,Jenkins,Project A,11,Cold,7.98156630000085,Success
+Local Benchmark Execution,Jenkins,Project A,12,Cold,7.045102000000043,Success
+Local Benchmark Execution,Jenkins,Project A,13,Cold,6.252344399999856,Success
+Local Benchmark Execution,Jenkins,Project A,14,Cold,5.780091000004177,Success
+Local Benchmark Execution,Jenkins,Project A,15,Cold,5.598097599999164,Success
+Local Benchmark Execution,Jenkins,Project A,16,Cold,6.237204899996868,Success
+Local Benchmark Execution,Jenkins,Project A,17,Cold,6.058520299997326,Success
+Local Benchmark Execution,Jenkins,Project A,18,Cold,5.729743400002917,Success
+Local Benchmark Execution,Jenkins,Project A,19,Cold,6.012694400000328,Success
+Local Benchmark Execution,Jenkins,Project A,20,Cold,6.7901300999947125,Success
 Local Benchmark Execution,Jenkins,Project A,1,Warm,3.7738213000011456,Success
 Local Benchmark Execution,Jenkins,Project A,2,Warm,3.517701800003124,Success
 Local Benchmark Execution,Jenkins,Project A,3,Warm,3.520083799998247,Success
@@ -19,6 +29,16 @@ Local Benchmark Execution,Jenkins,Project A,7,Warm,3.503786500001297,Success
 Local Benchmark Execution,Jenkins,Project A,8,Warm,3.5017163999982586,Success
 Local Benchmark Execution,Jenkins,Project A,9,Warm,3.5560764000001654,Success
 Local Benchmark Execution,Jenkins,Project A,10,Warm,3.437919399995735,Success
+Local Benchmark Execution,Jenkins,Project A,11,Warm,6.518645100000867,Success
+Local Benchmark Execution,Jenkins,Project A,12,Warm,4.985393300004944,Success
+Local Benchmark Execution,Jenkins,Project A,13,Warm,4.9725237999991805,Success
+Local Benchmark Execution,Jenkins,Project A,14,Warm,5.453646699999808,Success
+Local Benchmark Execution,Jenkins,Project A,15,Warm,4.913643100004265,Success
+Local Benchmark Execution,Jenkins,Project A,16,Warm,4.20256039999731,Success
+Local Benchmark Execution,Jenkins,Project A,17,Warm,4.939335699997173,Success
+Local Benchmark Execution,Jenkins,Project A,18,Warm,5.319983099998353,Success
+Local Benchmark Execution,Jenkins,Project A,19,Warm,6.196690200002195,Success
+Local Benchmark Execution,Jenkins,Project A,20,Warm,5.201547699998628,Success
 Local Benchmark Execution,Jenkins,Project A,1,Parallel,0.9340757999993002,Success
 Local Benchmark Execution,Jenkins,Project A,2,Parallel,0.9357412950002981,Success
 Local Benchmark Execution,Jenkins,Project A,3,Parallel,0.905734754999503,Success
@@ -29,6 +49,16 @@ Local Benchmark Execution,Jenkins,Project A,7,Parallel,0.9102309749994675,Succes
 Local Benchmark Execution,Jenkins,Project A,8,Parallel,0.9564125850003621,Success
 Local Benchmark Execution,Jenkins,Project A,9,Parallel,0.9139873499991155,Success
 Local Benchmark Execution,Jenkins,Project A,10,Parallel,0.9251995950004129,Success
+Local Benchmark Execution,Jenkins,Project A,11,Parallel,1.480939514999227,Success
+Local Benchmark Execution,Jenkins,Project A,12,Parallel,1.4034095550006895,Success
+Local Benchmark Execution,Jenkins,Project A,13,Parallel,1.1235340350007392,Success
+Local Benchmark Execution,Jenkins,Project A,14,Parallel,1.3112765550002223,Success
+Local Benchmark Execution,Jenkins,Project A,15,Parallel,1.1750929650002946,Success
+Local Benchmark Execution,Jenkins,Project A,16,Parallel,1.053605385001356,Success
+Local Benchmark Execution,Jenkins,Project A,17,Parallel,1.0329998850012998,Success
+Local Benchmark Execution,Jenkins,Project A,18,Parallel,1.1832294150011877,Success
+Local Benchmark Execution,Jenkins,Project A,19,Parallel,1.275322545000927,Success
+Local Benchmark Execution,Jenkins,Project A,20,Parallel,1.3825022849996458,Success
 Local Benchmark Execution,Jenkins,Project B,1,Cold,15.665026200000284,Success
 Local Benchmark Execution,Jenkins,Project B,2,Cold,12.800796399998944,Success
 Local Benchmark Execution,Jenkins,Project B,3,Cold,12.487656399996922,Success
@@ -39,6 +69,16 @@ Local Benchmark Execution,Jenkins,Project B,7,Cold,12.807374400003027,Success
 Local Benchmark Execution,Jenkins,Project B,8,Cold,12.66452279999794,Success
 Local Benchmark Execution,Jenkins,Project B,9,Cold,12.485924600001454,Success
 Local Benchmark Execution,Jenkins,Project B,10,Cold,12.637133799998992,Success
+Local Benchmark Execution,Jenkins,Project B,11,Cold,23.403544599997986,Success
+Local Benchmark Execution,Jenkins,Project B,12,Cold,23.511132200001157,Success
+Local Benchmark Execution,Jenkins,Project B,13,Cold,23.714909800000896,Success
+Local Benchmark Execution,Jenkins,Project B,14,Cold,25.744372200006183,Success
+Local Benchmark Execution,Jenkins,Project B,15,Cold,25.135311200003343,Success
+Local Benchmark Execution,Jenkins,Project B,16,Cold,26.19316930000059,Success
+Local Benchmark Execution,Jenkins,Project B,17,Cold,24.148006400002487,Success
+Local Benchmark Execution,Jenkins,Project B,18,Cold,22.75013979999858,Success
+Local Benchmark Execution,Jenkins,Project B,19,Cold,24.663549900000362,Success
+Local Benchmark Execution,Jenkins,Project B,20,Cold,21.727800799999386,Success
 Local Benchmark Execution,Jenkins,Project B,1,Warm,1.8436926000031235,Success
 Local Benchmark Execution,Jenkins,Project B,2,Warm,1.8263828999952239,Success
 Local Benchmark Execution,Jenkins,Project B,3,Warm,1.8271586000009847,Success
@@ -49,6 +89,16 @@ Local Benchmark Execution,Jenkins,Project B,7,Warm,1.8322021999993012,Success
 Local Benchmark Execution,Jenkins,Project B,8,Warm,1.831874000003154,Success
 Local Benchmark Execution,Jenkins,Project B,9,Warm,1.8493519999974524,Success
 Local Benchmark Execution,Jenkins,Project B,10,Warm,1.816417800000636,Success
+Local Benchmark Execution,Jenkins,Project B,11,Warm,2.840560700002243,Success
+Local Benchmark Execution,Jenkins,Project B,12,Warm,3.0660086999996565,Success
+Local Benchmark Execution,Jenkins,Project B,13,Warm,2.930689299999358,Success
+Local Benchmark Execution,Jenkins,Project B,14,Warm,2.916999000000942,Success
+Local Benchmark Execution,Jenkins,Project B,15,Warm,2.933217000001605,Success
+Local Benchmark Execution,Jenkins,Project B,16,Warm,3.026518099999521,Success
+Local Benchmark Execution,Jenkins,Project B,17,Warm,3.6188258999973186,Success
+Local Benchmark Execution,Jenkins,Project B,18,Warm,3.2983278000028804,Success
+Local Benchmark Execution,Jenkins,Project B,19,Warm,2.8148667000023124,Success
+Local Benchmark Execution,Jenkins,Project B,20,Warm,3.4227180999987468,Success
 Local Benchmark Execution,Jenkins,Project B,1,Parallel,1.1416481999991448,Success
 Local Benchmark Execution,Jenkins,Project B,2,Parallel,1.1436838050003644,Success
 Local Benchmark Execution,Jenkins,Project B,3,Parallel,1.1070091449993926,Success
@@ -59,6 +109,16 @@ Local Benchmark Execution,Jenkins,Project B,7,Parallel,1.1125045249993493,Succes
 Local Benchmark Execution,Jenkins,Project B,8,Parallel,1.1689487150004425,Success
 Local Benchmark Execution,Jenkins,Project B,9,Parallel,1.1170956499989189,Success
 Local Benchmark Execution,Jenkins,Project B,10,Parallel,1.1307995050005049,Success
+Local Benchmark Execution,Jenkins,Project B,11,Parallel,1.8100371849990553,Success
+Local Benchmark Execution,Jenkins,Project B,12,Parallel,1.7152783450008429,Success
+Local Benchmark Execution,Jenkins,Project B,13,Parallel,1.3732082650009034,Success
+Local Benchmark Execution,Jenkins,Project B,14,Parallel,1.6026713450002719,Success
+Local Benchmark Execution,Jenkins,Project B,15,Parallel,1.43622473500036,Success
+Local Benchmark Execution,Jenkins,Project B,16,Parallel,1.2877399150016573,Success
+Local Benchmark Execution,Jenkins,Project B,17,Parallel,1.2625554150015887,Success
+Local Benchmark Execution,Jenkins,Project B,18,Parallel,1.4461692850014516,Success
+Local Benchmark Execution,Jenkins,Project B,19,Parallel,1.5587275550011328,Success
+Local Benchmark Execution,Jenkins,Project B,20,Parallel,1.6897250149995673,Success
 Local Benchmark Execution,Jenkins,Project C,1,Cold,0.23057539999936125,Success
 Local Benchmark Execution,Jenkins,Project C,2,Cold,0.22457129999966127,Success
 Local Benchmark Execution,Jenkins,Project C,3,Cold,0.22478790000095614,Success
@@ -69,6 +129,16 @@ Local Benchmark Execution,Jenkins,Project C,7,Cold,0.22649339999989024,Success
 Local Benchmark Execution,Jenkins,Project C,8,Cold,0.22327810000060708,Success
 Local Benchmark Execution,Jenkins,Project C,9,Cold,0.2267986999999266,Success
 Local Benchmark Execution,Jenkins,Project C,10,Cold,0.2239873999991687,Success
+Local Benchmark Execution,Jenkins,Project C,11,Cold,0.36429739999803135,Success
+Local Benchmark Execution,Jenkins,Project C,12,Cold,0.31869349999979024,Success
+Local Benchmark Execution,Jenkins,Project C,13,Cold,0.2287148999988858,Success
+Local Benchmark Execution,Jenkins,Project C,14,Cold,0.22706340000004274,Success
+Local Benchmark Execution,Jenkins,Project C,15,Cold,0.224231200000213,Success
+Local Benchmark Execution,Jenkins,Project C,16,Cold,0.22680339999933494,Success
+Local Benchmark Execution,Jenkins,Project C,17,Cold,0.244632600001205,Success
+Local Benchmark Execution,Jenkins,Project C,18,Cold,0.22263510000120731,Success
+Local Benchmark Execution,Jenkins,Project C,19,Cold,0.228136899999663,Success
+Local Benchmark Execution,Jenkins,Project C,20,Cold,0.2298508000007132,Success
 Local Benchmark Execution,Jenkins,Project C,1,Warm,0.13057539999936124,Success
 Local Benchmark Execution,Jenkins,Project C,2,Warm,0.12457129999966128,Success
 Local Benchmark Execution,Jenkins,Project C,3,Warm,0.12478790000095615,Success
@@ -79,6 +149,16 @@ Local Benchmark Execution,Jenkins,Project C,7,Warm,0.12649339999989023,Success
 Local Benchmark Execution,Jenkins,Project C,8,Warm,0.12327810000060709,Success
 Local Benchmark Execution,Jenkins,Project C,9,Warm,0.1267986999999266,Success
 Local Benchmark Execution,Jenkins,Project C,10,Warm,0.1239873999991687,Success
+Local Benchmark Execution,Jenkins,Project C,11,Warm,0.2642973999980313,Success
+Local Benchmark Execution,Jenkins,Project C,12,Warm,0.2186934999997902,Success
+Local Benchmark Execution,Jenkins,Project C,13,Warm,0.1287148999988858,Success
+Local Benchmark Execution,Jenkins,Project C,14,Warm,0.12706340000004274,Success
+Local Benchmark Execution,Jenkins,Project C,15,Warm,0.124231200000213,Success
+Local Benchmark Execution,Jenkins,Project C,16,Warm,0.12680339999933493,Success
+Local Benchmark Execution,Jenkins,Project C,17,Warm,0.14463260000120498,Success
+Local Benchmark Execution,Jenkins,Project C,18,Warm,0.12263510000120732,Success
+Local Benchmark Execution,Jenkins,Project C,19,Warm,0.128136899999663,Success
+Local Benchmark Execution,Jenkins,Project C,20,Warm,0.1298508000007132,Success
 Local Benchmark Execution,Jenkins,Project C,1,Parallel,0.11057539999936125,Success
 Local Benchmark Execution,Jenkins,Project C,2,Parallel,0.10457129999966128,Success
 Local Benchmark Execution,Jenkins,Project C,3,Parallel,0.10478790000095614,Success
@@ -89,6 +169,28 @@ Local Benchmark Execution,Jenkins,Project C,7,Parallel,0.10649339999989024,Succe
 Local Benchmark Execution,Jenkins,Project C,8,Parallel,0.10327810000060708,Success
 Local Benchmark Execution,Jenkins,Project C,9,Parallel,0.10679869999992661,Success
 Local Benchmark Execution,Jenkins,Project C,10,Parallel,0.1039873999991687,Success
+Local Benchmark Execution,Jenkins,Project C,11,Parallel,0.24429739999803132,Success
+Local Benchmark Execution,Jenkins,Project C,12,Parallel,0.19869349999979022,Success
+Local Benchmark Execution,Jenkins,Project C,13,Parallel,0.10871489999888581,Success
+Local Benchmark Execution,Jenkins,Project C,14,Parallel,0.10706340000004275,Success
+Local Benchmark Execution,Jenkins,Project C,15,Parallel,0.10423120000021299,Success
+Local Benchmark Execution,Jenkins,Project C,16,Parallel,0.10680339999933494,Success
+Local Benchmark Execution,Jenkins,Project C,17,Parallel,0.12463260000120499,Success
+Local Benchmark Execution,Jenkins,Project C,18,Parallel,0.10263510000120732,Success
+Local Benchmark Execution,Jenkins,Project C,19,Parallel,0.108136899999663,Success
+Local Benchmark Execution,Jenkins,Project C,20,Parallel,0.1098508000007132,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,11,SaaS Cloud Execution,21.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,11,SaaS Cloud Execution,19.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,11,SaaS Cloud Execution,27.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,10,SaaS Cloud Execution,30.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,10,SaaS Cloud Execution,22.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,10,SaaS Cloud Execution,18.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,9,SaaS Cloud Execution,19.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,9,SaaS Cloud Execution,23.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,9,SaaS Cloud Execution,16.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,8,SaaS Cloud Execution,20.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,8,SaaS Cloud Execution,36.0,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,8,SaaS Cloud Execution,17.0,Success
 GitHub Actions API Scrape,GitHub Actions,Project C,7,SaaS Cloud Execution,25.0,Success
 GitHub Actions API Scrape,GitHub Actions,Project B,7,SaaS Cloud Execution,41.0,Success
 GitHub Actions API Scrape,GitHub Actions,Project A,7,SaaS Cloud Execution,35.0,Success
@@ -117,3 +219,7 @@ CircleCI API Scrape,CircleCI,All Workflows,4,SaaS Cloud Execution (Total),26.0,S
 CircleCI API Scrape,CircleCI,All Workflows,5,SaaS Cloud Execution (Total),42.0,Success
 CircleCI API Scrape,CircleCI,All Workflows,6,SaaS Cloud Execution (Total),41.0,Success
 CircleCI API Scrape,CircleCI,All Workflows,7,SaaS Cloud Execution (Total),33.0,Success
+CircleCI API Scrape,CircleCI,All Workflows,8,SaaS Cloud Execution (Total),29.0,Success
+CircleCI API Scrape,CircleCI,All Workflows,9,SaaS Cloud Execution (Total),14.0,Success
+CircleCI API Scrape,CircleCI,All Workflows,10,SaaS Cloud Execution (Total),29.0,Success
+CircleCI API Scrape,CircleCI,All Workflows,11,SaaS Cloud Execution (Total),24.0,Success
