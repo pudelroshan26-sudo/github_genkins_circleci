@@ -18,8 +18,8 @@ warnings.filterwarnings('ignore')
 np.random.seed(101)
 
 # Ensure output directories exist
-os.makedirs('thesis_figures', exist_ok=True)
-os.makedirs('thesis_tables', exist_ok=True)
+os.makedirs('pipeline_figures', exist_ok=True)
+os.makedirs('pipeline_tables', exist_ok=True)
 
 print("Step 1: Initializing directories and parameters...")
 
@@ -418,7 +418,7 @@ try:
     ax.set_ylabel('Build Time (seconds)')
     ax.set_xlabel('Benchmark Projects')
     plt.tight_layout()
-    plt.savefig('thesis_figures/fig1_cold_build_duration_boxplot.png', dpi=300)
+    plt.savefig('pipeline_figures/fig1_cold_build_duration_boxplot.png', dpi=300)
     plt.close()
 except Exception as e:
     print(f"Error on Chart 1: {e}")
@@ -444,7 +444,7 @@ try:
                         ha='center', va='center', xytext=(0, 5), textcoords='offset points', fontsize=9)
             
     plt.tight_layout()
-    plt.savefig('thesis_figures/fig2_warm_vs_cold_bar.png', dpi=300)
+    plt.savefig('pipeline_figures/fig2_warm_vs_cold_bar.png', dpi=300)
     plt.close()
 except Exception as e:
     print(f"Error on Chart 2: {e}")
@@ -458,7 +458,7 @@ try:
     ax.set_ylabel('Build Duration (seconds)')
     ax.set_xlabel('Platform')
     plt.tight_layout()
-    plt.savefig('thesis_figures/fig3_build_duration_violin.png', dpi=300)
+    plt.savefig('pipeline_figures/fig3_build_duration_violin.png', dpi=300)
     plt.close()
 except Exception as e:
     print(f"Error on Chart 3: {e}")
@@ -495,7 +495,7 @@ try:
                         ha='center', va='center', xytext=(0, 5), textcoords='offset points', fontsize=9)
             
     plt.tight_layout()
-    plt.savefig('thesis_figures/fig4_parallel_speedup.png', dpi=300)
+    plt.savefig('pipeline_figures/fig4_parallel_speedup.png', dpi=300)
     plt.close()
 except Exception as e:
     print(f"Error on Chart 4: {e}")
@@ -517,7 +517,7 @@ try:
         ax.text(bar.get_x() + bar.get_width()/2.0, yval + 1, f'{yval:.1f}s', ha='center', va='bottom', fontweight='bold')
         
     plt.tight_layout()
-    plt.savefig('thesis_figures/fig5_queue_latency_bar.png', dpi=300)
+    plt.savefig('pipeline_figures/fig5_queue_latency_bar.png', dpi=300)
     plt.close()
 except Exception as e:
     print(f"Error on Chart 5: {e}")
@@ -537,7 +537,7 @@ try:
         ax.text(bar.get_x() + bar.get_width()/2.0, yval + 1.5, f'{yval:.1f}%', ha='center', va='bottom', fontweight='bold')
         
     plt.tight_layout()
-    plt.savefig('thesis_figures/fig6_success_rate_bar.png', dpi=300)
+    plt.savefig('pipeline_figures/fig6_success_rate_bar.png', dpi=300)
     plt.close()
 except Exception as e:
     print(f"Error on Chart 6: {e}")
@@ -558,7 +558,7 @@ try:
         ax.text(bar.get_x() + bar.get_width()/2.0, yval + 0.8, f'{yval:.1f} min', ha='center', va='bottom', fontweight='bold')
         
     plt.tight_layout()
-    plt.savefig('thesis_figures/fig7_mttr_bar.png', dpi=300)
+    plt.savefig('pipeline_figures/fig7_mttr_bar.png', dpi=300)
     plt.close()
 except Exception as e:
     print(f"Error on Chart 7: {e}")
@@ -577,7 +577,7 @@ def build_tco_line_chart(team_size, fig_num, filename):
         ax.set_xlabel('Usage Scenario')
         ax.legend()
         plt.tight_layout()
-        plt.savefig(f'thesis_figures/{filename}', dpi=300)
+        plt.savefig(f'pipeline_figures/{filename}', dpi=300)
         plt.close()
     except Exception as e:
         print(f"Error on TCO {team_size}: {e}")
@@ -639,7 +639,7 @@ try:
     ax.legend(handles=legend_elements, loc='upper right', bbox_to_anchor=(1.35, 1))
     
     plt.tight_layout()
-    plt.savefig('thesis_figures/fig11_tco_heatmap.png', dpi=300, bbox_inches='tight')
+    plt.savefig('pipeline_figures/fig11_tco_heatmap.png', dpi=300, bbox_inches='tight')
     plt.close()
 except Exception as e:
     print(f"Error on Chart 11: {e}")
@@ -669,7 +669,7 @@ try:
         ax.text(bar.get_x() + bar.get_width()/2.0, yval + 1.5, f'{yval:.1f}', ha='center', va='bottom', fontweight='bold')
         
     plt.tight_layout()
-    plt.savefig('thesis_figures/fig12_sus_scores_bar.png', dpi=300)
+    plt.savefig('pipeline_figures/fig12_sus_scores_bar.png', dpi=300)
     plt.close()
 except Exception as e:
     print(f"Error on Chart 12: {e}")
@@ -687,7 +687,7 @@ try:
     sns.heatmap(df_likert_heat, annot=True, cmap='RdYlGn', vmin=1.0, vmax=5.0, fmt='.2f', linewidths=.5, ax=ax)
     ax.set_title('Figure 13: Likert Scale Usability Items (Mean Score / 15 Devs)', pad=15, fontweight='bold')
     plt.tight_layout()
-    plt.savefig('thesis_figures/fig13_likert_heatmap.png', dpi=300)
+    plt.savefig('pipeline_figures/fig13_likert_heatmap.png', dpi=300)
     plt.close()
 except Exception as e:
     print(f"Error on Chart 13: {e}")
@@ -729,7 +729,7 @@ try:
     
     plt.title('Figure 14: Developer Usability Profile (Likert Dimensions)', pad=25, fontweight='bold')
     plt.legend(loc='upper right', bbox_to_anchor=(0.1, 0.1))
-    plt.savefig('thesis_figures/fig14_likert_radar.png', dpi=300)
+    plt.savefig('pipeline_figures/fig14_likert_radar.png', dpi=300)
     plt.close()
 except Exception as e:
     print(f"Error on Chart 14: {e}")
@@ -759,7 +759,7 @@ try:
         
     plt.title('Figure 15: Integration Score Profiles (Rubric out of 10)', pad=25, fontweight='bold')
     plt.legend(loc='upper right', bbox_to_anchor=(0.1, 0.1))
-    plt.savefig('thesis_figures/fig15_integration_radar.png', dpi=300)
+    plt.savefig('pipeline_figures/fig15_integration_radar.png', dpi=300)
     plt.close()
 except Exception as e:
     print(f"Error on Chart 15: {e}")
@@ -779,7 +779,7 @@ try:
         ax.text(width + 0.2, bar.get_y() + bar.get_height()/2.0, f'{width:.2f}/10', ha='left', va='center', fontweight='bold')
         
     plt.tight_layout()
-    plt.savefig('thesis_figures/fig16_overall_weighted_score.png', dpi=300)
+    plt.savefig('pipeline_figures/fig16_overall_weighted_score.png', dpi=300)
     plt.close()
 except Exception as e:
     print(f"Error on Chart 16: {e}")
@@ -812,7 +812,7 @@ try:
         ax.text(i, h + 0.2, f'{h:.2f}', ha='center', va='bottom', fontweight='bold')
         
     plt.tight_layout()
-    plt.savefig('thesis_figures/fig17_dimension_breakdown_stacked.png', dpi=300)
+    plt.savefig('pipeline_figures/fig17_dimension_breakdown_stacked.png', dpi=300)
     plt.close()
 except Exception as e:
     print(f"Error on Chart 17: {e}")
@@ -847,7 +847,7 @@ for p in platforms:
             'Min (s)': np.min(proj), 'Max (s)': np.max(proj), 'Sample N': len(proj)
         })
 df_perf_summary = pd.DataFrame(perf_summary_rows)
-df_perf_summary.to_csv('thesis_tables/table_build_performance_summary.csv', index=False)
+df_perf_summary.to_csv('pipeline_tables/table_build_performance_summary.csv', index=False)
 
 # Table 2: Statistical Tests
 stat_test_rows = [
@@ -897,7 +897,7 @@ for label, key in [('Cold Builds Project A', 'cold_A'), ('Cold Builds Project B'
     })
 
 df_stat_tests = pd.DataFrame(stat_test_rows)
-df_stat_tests.to_csv('thesis_tables/table_statistical_tests.csv', index=False)
+df_stat_tests.to_csv('pipeline_tables/table_statistical_tests.csv', index=False)
 
 # Table 3: TCO all scenarios
 tco_rows = []
@@ -910,7 +910,7 @@ for p in platforms:
             'High Usage (100/day)': tco_matrix[p][team][2]
         })
 df_tco = pd.DataFrame(tco_rows)
-df_tco.to_csv('thesis_tables/table_tco_all_scenarios.csv', index=False)
+df_tco.to_csv('pipeline_tables/table_tco_all_scenarios.csv', index=False)
 
 # Table 4: SUS and Likert Summary
 usability_rows = []
@@ -925,7 +925,7 @@ for p in platforms:
         row[f'Likert L{item+1} Std'] = stats_results['likert'][p][f'L{item+1}']['std']
     usability_rows.append(row)
 df_usability = pd.DataFrame(usability_rows)
-df_usability.to_csv('thesis_tables/table_sus_likert.csv', index=False)
+df_usability.to_csv('pipeline_tables/table_sus_likert.csv', index=False)
 
 # Table 5: Weighted Scores Breakdown
 overall_score_rows = []
@@ -940,7 +940,7 @@ for p in platforms:
         'Weighted Overall Index': final_scores[p]
     })
 df_overall_scores = pd.DataFrame(overall_score_rows)
-df_overall_scores.to_csv('thesis_tables/table_overall_scores.csv', index=False)
+df_overall_scores.to_csv('pipeline_tables/table_overall_scores.csv', index=False)
 
 # Table 6: Integration Rubric Scores
 integration_rows = []
@@ -955,7 +955,7 @@ for p in platforms:
         'Weighted Integration Score': integration_scores[p]
     })
 df_integration = pd.DataFrame(integration_rows)
-df_integration.to_csv('thesis_tables/table_integration_scores.csv', index=False)
+df_integration.to_csv('pipeline_tables/table_integration_scores.csv', index=False)
 
 # Table 7: Raw Observations (Individual Runs)
 raw_obs_rows = []
@@ -1020,7 +1020,67 @@ if not raw_obs_rows:
             })
 
 df_raw_obs = pd.DataFrame(raw_obs_rows)
-df_raw_obs.to_csv('thesis_tables/table_raw_observations.csv', index=False)
+df_raw_obs.to_csv('pipeline_tables/table_raw_observations.csv', index=False)
+
+# Table 8: Cleaned Observations (Individual Runs after IQR Outlier Filtering)
+cleaned_obs_rows = []
+
+# Jenkins Cleaned Runs
+for label, data_list in [('Project A Cold', node_cold_jen), ('Project A Warm', node_warm_jen), ('Project A Parallel', node_parallel_jen),
+                         ('Project B Cold', flask_cold_jen), ('Project B Warm', flask_warm_jen), ('Project B Parallel', flask_parallel_jen),
+                         ('Project C Cold', micro_cold_jen), ('Project C Warm', micro_warm_jen), ('Project C Parallel', micro_parallel_jen)]:
+    parts = label.split(' ')
+    project_name = f"Project {parts[1]}"
+    condition = parts[2]
+    for idx, val in enumerate(data_list):
+        cleaned_obs_rows.append({
+            'Source': 'Local Benchmark Execution',
+            'Platform': 'Jenkins',
+            'Project': project_name,
+            'Run Number': idx + 1,
+            'Condition/Profile': condition,
+            'Duration (seconds)': val,
+            'Status': 'Success'
+        })
+
+# GitHub Actions Cleaned Runs
+for label, data_list in [('Project A Cold', node_cold_gha), ('Project A Warm', node_warm_gha), ('Project A Parallel', node_parallel_gha),
+                         ('Project B Cold', flask_cold_gha), ('Project B Warm', flask_warm_gha), ('Project B Parallel', flask_parallel_gha),
+                         ('Project C Cold', micro_cold_gha), ('Project C Warm', micro_warm_gha), ('Project C Parallel', micro_parallel_gha)]:
+    parts = label.split(' ')
+    project_name = f"Project {parts[1]}"
+    condition = parts[2]
+    for idx, val in enumerate(data_list):
+        cleaned_obs_rows.append({
+            'Source': 'GitHub Actions API Scrape',
+            'Platform': 'GitHub Actions',
+            'Project': project_name,
+            'Run Number': idx + 1,
+            'Condition/Profile': condition,
+            'Duration (seconds)': val,
+            'Status': 'Success'
+        })
+
+# CircleCI Cleaned Runs
+for label, data_list in [('Project A Cold', node_cold_cci), ('Project A Warm', node_warm_cci), ('Project A Parallel', node_parallel_cci),
+                         ('Project B Cold', flask_cold_cci), ('Project B Warm', flask_warm_cci), ('Project B Parallel', flask_parallel_cci),
+                         ('Project C Cold', micro_cold_cci), ('Project C Warm', micro_warm_cci), ('Project C Parallel', micro_parallel_cci)]:
+    parts = label.split(' ')
+    project_name = f"Project {parts[1]}"
+    condition = parts[2]
+    for idx, val in enumerate(data_list):
+        cleaned_obs_rows.append({
+            'Source': 'CircleCI API Scrape',
+            'Platform': 'CircleCI',
+            'Project': project_name,
+            'Run Number': idx + 1,
+            'Condition/Profile': condition,
+            'Duration (seconds)': val,
+            'Status': 'Success'
+        })
+
+df_clean_obs = pd.DataFrame(cleaned_obs_rows)
+df_clean_obs.to_csv('pipeline_tables/table_cleaned_observations.csv', index=False)
 
 # ---------------------------------------------------------
 # STEP 5 & 6: CHAPTER TEXT GENERATION
@@ -1409,12 +1469,12 @@ Despite these limitations, the statistical significance of the results provides 
 
 # Compile results text
 results_chapter_text = results_text_template.format(**results_mapping)
-with open('thesis_results_chapter.txt', 'w', encoding='utf-8') as f:
+with open('results_chapter.txt', 'w', encoding='utf-8') as f:
     f.write(results_chapter_text)
 
 # Compile discussion text
 discussion_chapter_text = discussion_text_template.format(**results_mapping)
-with open('thesis_discussion_chapter.txt', 'w', encoding='utf-8') as f:
+with open('discussion_chapter.txt', 'w', encoding='utf-8') as f:
     f.write(discussion_chapter_text)
 
 print("Step 5 & 6 complete: Text files created successfully.")
@@ -1442,6 +1502,6 @@ summary_table = f"""
 print(summary_table)
 
 print("\nAll tasks completed successfully!")
-print("Figures saved in 'thesis_figures/' folder.")
-print("Tables saved in 'thesis_tables/' folder.")
-print("Chapters saved as 'thesis_results_chapter.txt' and 'thesis_discussion_chapter.txt'.")
+print("Figures saved in 'pipeline_figures/' folder.")
+print("Tables saved in 'pipeline_tables/' folder.")
+print("Chapters saved as 'results_chapter.txt' and 'discussion_chapter.txt'.")

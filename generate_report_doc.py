@@ -117,7 +117,7 @@ def create_document():
     # --- CHAPTER 5 ---
     add_chapter_title("5", "RESULTS AND ANALYSIS")
     # Read generated Chapter 5 text
-    results_path = os.path.join(workspace_dir, "thesis_results_chapter.txt")
+    results_path = os.path.join(workspace_dir, "results_chapter.txt")
     if os.path.exists(results_path):
         with open(results_path, "r", encoding="utf-8") as f:
             lines = f.readlines()
@@ -130,12 +130,12 @@ def create_document():
                 elif cleaned:
                     add_body_paragraph(cleaned)
     else:
-        add_body_paragraph("[Error: thesis_results_chapter.txt not found. Run thesis_analysis.py first.]")
+        add_body_paragraph("[Error: results_chapter.txt not found. Run thesis_analysis.py first.]")
 
     # --- CHAPTER 6 ---
     add_chapter_title("6", "DISCUSSION AND CONCLUSION")
     # Read generated Chapter 6 text
-    discussion_path = os.path.join(workspace_dir, "thesis_discussion_chapter.txt")
+    discussion_path = os.path.join(workspace_dir, "discussion_chapter.txt")
     if os.path.exists(discussion_path):
         with open(discussion_path, "r", encoding="utf-8") as f:
             lines = f.readlines()
@@ -148,7 +148,7 @@ def create_document():
                 elif cleaned:
                     add_body_paragraph(cleaned)
     else:
-        add_body_paragraph("[Error: thesis_discussion_chapter.txt not found. Run thesis_analysis.py first.]")
+        add_body_paragraph("[Error: discussion_chapter.txt not found. Run thesis_analysis.py first.]")
 
     # Save
     try:

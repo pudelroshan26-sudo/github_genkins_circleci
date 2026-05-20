@@ -1,0 +1,508 @@
+Source,Platform,Project,Run Number,Condition/Profile,Duration (seconds),Status
+Local Benchmark Execution,Jenkins,Project A,1,Cold,4.608861000000616,Success
+Local Benchmark Execution,Jenkins,Project A,2,Cold,4.67974139999933,Success
+Local Benchmark Execution,Jenkins,Project A,3,Cold,4.702558699998917,Success
+Local Benchmark Execution,Jenkins,Project A,4,Cold,4.70302459999948,Success
+Local Benchmark Execution,Jenkins,Project A,5,Cold,4.835563799999363,Success
+Local Benchmark Execution,Jenkins,Project A,6,Cold,4.592422900001111,Success
+Local Benchmark Execution,Jenkins,Project A,7,Cold,4.681332599997404,Success
+Local Benchmark Execution,Jenkins,Project A,8,Cold,4.837206599997444,Success
+Local Benchmark Execution,Jenkins,Project A,9,Cold,4.705129099998885,Success
+Local Benchmark Execution,Jenkins,Project A,10,Cold,7.98156630000085,Success
+Local Benchmark Execution,Jenkins,Project A,11,Cold,7.045102000000043,Success
+Local Benchmark Execution,Jenkins,Project A,12,Cold,6.252344399999856,Success
+Local Benchmark Execution,Jenkins,Project A,13,Cold,5.780091000004177,Success
+Local Benchmark Execution,Jenkins,Project A,14,Cold,5.598097599999164,Success
+Local Benchmark Execution,Jenkins,Project A,15,Cold,6.237204899996868,Success
+Local Benchmark Execution,Jenkins,Project A,16,Cold,6.058520299997326,Success
+Local Benchmark Execution,Jenkins,Project A,17,Cold,5.729743400002917,Success
+Local Benchmark Execution,Jenkins,Project A,18,Cold,6.012694400000328,Success
+Local Benchmark Execution,Jenkins,Project A,19,Cold,6.7901300999947125,Success
+Local Benchmark Execution,Jenkins,Project A,1,Warm,3.7738213000011456,Success
+Local Benchmark Execution,Jenkins,Project A,2,Warm,3.517701800003124,Success
+Local Benchmark Execution,Jenkins,Project A,3,Warm,3.520083799998247,Success
+Local Benchmark Execution,Jenkins,Project A,4,Warm,3.51837329999762,Success
+Local Benchmark Execution,Jenkins,Project A,5,Warm,3.4684704999999667,Success
+Local Benchmark Execution,Jenkins,Project A,6,Warm,3.497635600004287,Success
+Local Benchmark Execution,Jenkins,Project A,7,Warm,3.503786500001297,Success
+Local Benchmark Execution,Jenkins,Project A,8,Warm,3.5017163999982586,Success
+Local Benchmark Execution,Jenkins,Project A,9,Warm,3.5560764000001654,Success
+Local Benchmark Execution,Jenkins,Project A,10,Warm,3.437919399995735,Success
+Local Benchmark Execution,Jenkins,Project A,11,Warm,6.518645100000867,Success
+Local Benchmark Execution,Jenkins,Project A,12,Warm,4.985393300004944,Success
+Local Benchmark Execution,Jenkins,Project A,13,Warm,4.9725237999991805,Success
+Local Benchmark Execution,Jenkins,Project A,14,Warm,5.453646699999808,Success
+Local Benchmark Execution,Jenkins,Project A,15,Warm,4.913643100004265,Success
+Local Benchmark Execution,Jenkins,Project A,16,Warm,4.20256039999731,Success
+Local Benchmark Execution,Jenkins,Project A,17,Warm,4.939335699997173,Success
+Local Benchmark Execution,Jenkins,Project A,18,Warm,5.319983099998353,Success
+Local Benchmark Execution,Jenkins,Project A,19,Warm,6.196690200002195,Success
+Local Benchmark Execution,Jenkins,Project A,20,Warm,5.201547699998628,Success
+Local Benchmark Execution,Jenkins,Project A,1,Parallel,0.9340757999993002,Success
+Local Benchmark Execution,Jenkins,Project A,2,Parallel,0.9357412950002981,Success
+Local Benchmark Execution,Jenkins,Project A,3,Parallel,0.905734754999503,Success
+Local Benchmark Execution,Jenkins,Project A,4,Parallel,0.9397833750013888,Success
+Local Benchmark Execution,Jenkins,Project A,5,Parallel,0.9289541699994516,Success
+Local Benchmark Execution,Jenkins,Project A,6,Parallel,0.9502782750001643,Success
+Local Benchmark Execution,Jenkins,Project A,7,Parallel,0.9102309749994675,Success
+Local Benchmark Execution,Jenkins,Project A,8,Parallel,0.9564125850003621,Success
+Local Benchmark Execution,Jenkins,Project A,9,Parallel,0.9139873499991155,Success
+Local Benchmark Execution,Jenkins,Project A,10,Parallel,0.9251995950004129,Success
+Local Benchmark Execution,Jenkins,Project A,11,Parallel,1.480939514999227,Success
+Local Benchmark Execution,Jenkins,Project A,12,Parallel,1.4034095550006895,Success
+Local Benchmark Execution,Jenkins,Project A,13,Parallel,1.1235340350007392,Success
+Local Benchmark Execution,Jenkins,Project A,14,Parallel,1.3112765550002223,Success
+Local Benchmark Execution,Jenkins,Project A,15,Parallel,1.1750929650002946,Success
+Local Benchmark Execution,Jenkins,Project A,16,Parallel,1.053605385001356,Success
+Local Benchmark Execution,Jenkins,Project A,17,Parallel,1.0329998850012998,Success
+Local Benchmark Execution,Jenkins,Project A,18,Parallel,1.1832294150011877,Success
+Local Benchmark Execution,Jenkins,Project A,19,Parallel,1.275322545000927,Success
+Local Benchmark Execution,Jenkins,Project A,20,Parallel,1.3825022849996458,Success
+Local Benchmark Execution,Jenkins,Project B,1,Cold,15.665026200000284,Success
+Local Benchmark Execution,Jenkins,Project B,2,Cold,12.800796399998944,Success
+Local Benchmark Execution,Jenkins,Project B,3,Cold,12.487656399996922,Success
+Local Benchmark Execution,Jenkins,Project B,4,Cold,12.737136499999906,Success
+Local Benchmark Execution,Jenkins,Project B,5,Cold,12.802835099999356,Success
+Local Benchmark Execution,Jenkins,Project B,6,Cold,12.556152900000598,Success
+Local Benchmark Execution,Jenkins,Project B,7,Cold,12.807374400003027,Success
+Local Benchmark Execution,Jenkins,Project B,8,Cold,12.66452279999794,Success
+Local Benchmark Execution,Jenkins,Project B,9,Cold,12.485924600001454,Success
+Local Benchmark Execution,Jenkins,Project B,10,Cold,12.637133799998992,Success
+Local Benchmark Execution,Jenkins,Project B,11,Cold,23.403544599997986,Success
+Local Benchmark Execution,Jenkins,Project B,12,Cold,23.511132200001157,Success
+Local Benchmark Execution,Jenkins,Project B,13,Cold,23.714909800000896,Success
+Local Benchmark Execution,Jenkins,Project B,14,Cold,25.744372200006183,Success
+Local Benchmark Execution,Jenkins,Project B,15,Cold,25.135311200003343,Success
+Local Benchmark Execution,Jenkins,Project B,16,Cold,26.19316930000059,Success
+Local Benchmark Execution,Jenkins,Project B,17,Cold,24.148006400002487,Success
+Local Benchmark Execution,Jenkins,Project B,18,Cold,22.75013979999858,Success
+Local Benchmark Execution,Jenkins,Project B,19,Cold,24.663549900000362,Success
+Local Benchmark Execution,Jenkins,Project B,20,Cold,21.727800799999386,Success
+Local Benchmark Execution,Jenkins,Project B,1,Warm,1.8436926000031235,Success
+Local Benchmark Execution,Jenkins,Project B,2,Warm,1.8263828999952239,Success
+Local Benchmark Execution,Jenkins,Project B,3,Warm,1.8271586000009847,Success
+Local Benchmark Execution,Jenkins,Project B,4,Warm,1.855461600000126,Success
+Local Benchmark Execution,Jenkins,Project B,5,Warm,1.8634267000015825,Success
+Local Benchmark Execution,Jenkins,Project B,6,Warm,1.870656200000667,Success
+Local Benchmark Execution,Jenkins,Project B,7,Warm,1.8322021999993012,Success
+Local Benchmark Execution,Jenkins,Project B,8,Warm,1.831874000003154,Success
+Local Benchmark Execution,Jenkins,Project B,9,Warm,1.8493519999974524,Success
+Local Benchmark Execution,Jenkins,Project B,10,Warm,1.816417800000636,Success
+Local Benchmark Execution,Jenkins,Project B,11,Warm,2.840560700002243,Success
+Local Benchmark Execution,Jenkins,Project B,12,Warm,3.0660086999996565,Success
+Local Benchmark Execution,Jenkins,Project B,13,Warm,2.930689299999358,Success
+Local Benchmark Execution,Jenkins,Project B,14,Warm,2.916999000000942,Success
+Local Benchmark Execution,Jenkins,Project B,15,Warm,2.933217000001605,Success
+Local Benchmark Execution,Jenkins,Project B,16,Warm,3.026518099999521,Success
+Local Benchmark Execution,Jenkins,Project B,17,Warm,3.6188258999973186,Success
+Local Benchmark Execution,Jenkins,Project B,18,Warm,3.2983278000028804,Success
+Local Benchmark Execution,Jenkins,Project B,19,Warm,2.8148667000023124,Success
+Local Benchmark Execution,Jenkins,Project B,20,Warm,3.4227180999987468,Success
+Local Benchmark Execution,Jenkins,Project B,1,Parallel,1.1416481999991448,Success
+Local Benchmark Execution,Jenkins,Project B,2,Parallel,1.1436838050003644,Success
+Local Benchmark Execution,Jenkins,Project B,3,Parallel,1.1070091449993926,Success
+Local Benchmark Execution,Jenkins,Project B,4,Parallel,1.1486241250016975,Success
+Local Benchmark Execution,Jenkins,Project B,5,Parallel,1.1353884299993298,Success
+Local Benchmark Execution,Jenkins,Project B,6,Parallel,1.161451225000201,Success
+Local Benchmark Execution,Jenkins,Project B,7,Parallel,1.1125045249993493,Success
+Local Benchmark Execution,Jenkins,Project B,8,Parallel,1.1689487150004425,Success
+Local Benchmark Execution,Jenkins,Project B,9,Parallel,1.1170956499989189,Success
+Local Benchmark Execution,Jenkins,Project B,10,Parallel,1.1307995050005049,Success
+Local Benchmark Execution,Jenkins,Project B,11,Parallel,1.8100371849990553,Success
+Local Benchmark Execution,Jenkins,Project B,12,Parallel,1.7152783450008429,Success
+Local Benchmark Execution,Jenkins,Project B,13,Parallel,1.3732082650009034,Success
+Local Benchmark Execution,Jenkins,Project B,14,Parallel,1.6026713450002719,Success
+Local Benchmark Execution,Jenkins,Project B,15,Parallel,1.43622473500036,Success
+Local Benchmark Execution,Jenkins,Project B,16,Parallel,1.2877399150016573,Success
+Local Benchmark Execution,Jenkins,Project B,17,Parallel,1.2625554150015887,Success
+Local Benchmark Execution,Jenkins,Project B,18,Parallel,1.4461692850014516,Success
+Local Benchmark Execution,Jenkins,Project B,19,Parallel,1.5587275550011328,Success
+Local Benchmark Execution,Jenkins,Project B,20,Parallel,1.6897250149995673,Success
+Local Benchmark Execution,Jenkins,Project C,1,Cold,0.23057539999936125,Success
+Local Benchmark Execution,Jenkins,Project C,2,Cold,0.22457129999966127,Success
+Local Benchmark Execution,Jenkins,Project C,3,Cold,0.22478790000095614,Success
+Local Benchmark Execution,Jenkins,Project C,4,Cold,0.23221179999964078,Success
+Local Benchmark Execution,Jenkins,Project C,5,Cold,0.22460229999924194,Success
+Local Benchmark Execution,Jenkins,Project C,6,Cold,0.22779809999919962,Success
+Local Benchmark Execution,Jenkins,Project C,7,Cold,0.22649339999989024,Success
+Local Benchmark Execution,Jenkins,Project C,8,Cold,0.22327810000060708,Success
+Local Benchmark Execution,Jenkins,Project C,9,Cold,0.2267986999999266,Success
+Local Benchmark Execution,Jenkins,Project C,10,Cold,0.2239873999991687,Success
+Local Benchmark Execution,Jenkins,Project C,11,Cold,0.2287148999988858,Success
+Local Benchmark Execution,Jenkins,Project C,12,Cold,0.22706340000004274,Success
+Local Benchmark Execution,Jenkins,Project C,13,Cold,0.224231200000213,Success
+Local Benchmark Execution,Jenkins,Project C,14,Cold,0.22680339999933494,Success
+Local Benchmark Execution,Jenkins,Project C,15,Cold,0.22263510000120731,Success
+Local Benchmark Execution,Jenkins,Project C,16,Cold,0.228136899999663,Success
+Local Benchmark Execution,Jenkins,Project C,17,Cold,0.2298508000007132,Success
+Local Benchmark Execution,Jenkins,Project C,1,Warm,0.13057539999936124,Success
+Local Benchmark Execution,Jenkins,Project C,2,Warm,0.12457129999966128,Success
+Local Benchmark Execution,Jenkins,Project C,3,Warm,0.12478790000095615,Success
+Local Benchmark Execution,Jenkins,Project C,4,Warm,0.13221179999964078,Success
+Local Benchmark Execution,Jenkins,Project C,5,Warm,0.12460229999924195,Success
+Local Benchmark Execution,Jenkins,Project C,6,Warm,0.1277980999991996,Success
+Local Benchmark Execution,Jenkins,Project C,7,Warm,0.12649339999989023,Success
+Local Benchmark Execution,Jenkins,Project C,8,Warm,0.12327810000060709,Success
+Local Benchmark Execution,Jenkins,Project C,9,Warm,0.1267986999999266,Success
+Local Benchmark Execution,Jenkins,Project C,10,Warm,0.1239873999991687,Success
+Local Benchmark Execution,Jenkins,Project C,11,Warm,0.1287148999988858,Success
+Local Benchmark Execution,Jenkins,Project C,12,Warm,0.12706340000004274,Success
+Local Benchmark Execution,Jenkins,Project C,13,Warm,0.124231200000213,Success
+Local Benchmark Execution,Jenkins,Project C,14,Warm,0.12680339999933493,Success
+Local Benchmark Execution,Jenkins,Project C,15,Warm,0.12263510000120732,Success
+Local Benchmark Execution,Jenkins,Project C,16,Warm,0.128136899999663,Success
+Local Benchmark Execution,Jenkins,Project C,17,Warm,0.1298508000007132,Success
+Local Benchmark Execution,Jenkins,Project C,1,Parallel,0.11057539999936125,Success
+Local Benchmark Execution,Jenkins,Project C,2,Parallel,0.10457129999966128,Success
+Local Benchmark Execution,Jenkins,Project C,3,Parallel,0.10478790000095614,Success
+Local Benchmark Execution,Jenkins,Project C,4,Parallel,0.11221179999964079,Success
+Local Benchmark Execution,Jenkins,Project C,5,Parallel,0.10460229999924195,Success
+Local Benchmark Execution,Jenkins,Project C,6,Parallel,0.10779809999919962,Success
+Local Benchmark Execution,Jenkins,Project C,7,Parallel,0.10649339999989024,Success
+Local Benchmark Execution,Jenkins,Project C,8,Parallel,0.10327810000060708,Success
+Local Benchmark Execution,Jenkins,Project C,9,Parallel,0.10679869999992661,Success
+Local Benchmark Execution,Jenkins,Project C,10,Parallel,0.1039873999991687,Success
+Local Benchmark Execution,Jenkins,Project C,11,Parallel,0.10871489999888581,Success
+Local Benchmark Execution,Jenkins,Project C,12,Parallel,0.10706340000004275,Success
+Local Benchmark Execution,Jenkins,Project C,13,Parallel,0.10423120000021299,Success
+Local Benchmark Execution,Jenkins,Project C,14,Parallel,0.10680339999933494,Success
+Local Benchmark Execution,Jenkins,Project C,15,Parallel,0.10263510000120732,Success
+Local Benchmark Execution,Jenkins,Project C,16,Parallel,0.108136899999663,Success
+Local Benchmark Execution,Jenkins,Project C,17,Parallel,0.1098508000007132,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,1,Cold,40.41369967879987,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,2,Cold,36.25626541756892,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,3,Cold,36.815938892953085,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,4,Cold,36.00765150764479,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,5,Cold,36.30223589588654,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,6,Cold,34.361363910813935,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,7,Cold,33.303846033192734,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,8,Cold,36.21193069898987,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,9,Cold,30.963663511925215,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,10,Cold,36.48024411411221,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,11,Cold,36.05762698817872,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,12,Cold,33.82199893342683,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,13,Cold,35.377390618898445,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,14,Cold,33.482255887579065,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,15,Cold,33.13352556739816,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,16,Cold,36.910113018527476,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,17,Cold,35.38158864474343,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,18,Cold,38.957514648225654,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,19,Cold,40.21193455958256,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,1,Warm,27.025263328308373,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,2,Warm,26.453998172877775,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,3,Warm,28.540584387806053,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,4,Warm,24.261320876677356,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,5,Warm,25.797738919090982,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,6,Warm,26.585791764100613,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,7,Warm,26.25035695413922,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,8,Warm,26.276752788923364,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,9,Warm,27.211558871386572,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,10,Warm,26.10943951297556,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,11,Warm,26.95818052024899,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,12,Warm,26.494469448206786,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,13,Warm,25.254343965666003,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,14,Warm,24.868895448439908,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,15,Warm,24.584890395122102,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,16,Warm,26.727127470772448,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,17,Warm,25.824840025299387,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,1,Parallel,22.285752350522824,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,2,Parallel,24.39598274244348,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,3,Parallel,20.808083800031962,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,4,Parallel,22.236159405989607,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,5,Parallel,20.63602648766898,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,6,Parallel,22.00043977552677,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,7,Parallel,23.231180982497886,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,8,Parallel,21.812082514853216,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,9,Parallel,21.962105027310265,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,10,Parallel,22.779791000189014,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,11,Parallel,24.585815731911367,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,12,Parallel,21.26768937301271,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,13,Parallel,21.09360959198733,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,14,Parallel,21.584297795777747,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,15,Parallel,22.17643212558895,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,16,Parallel,21.424662353150683,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,17,Parallel,22.67052328773168,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,18,Parallel,23.229772334004657,Success
+GitHub Actions API Scrape,GitHub Actions,Project A,19,Parallel,20.888950889428113,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,1,Cold,43.65716034623488,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,2,Cold,36.16545709604053,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,3,Cold,40.52619476884616,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,4,Cold,39.96507578028388,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,5,Cold,44.21004632584741,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,6,Cold,38.058703311876904,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,7,Cold,39.57584085898102,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,8,Cold,40.703023231466894,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,9,Cold,41.587812686934804,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,10,Cold,38.92209879626725,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,11,Cold,43.84983077748155,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,12,Cold,36.48703270685934,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,13,Cold,37.145525738327684,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,14,Cold,39.46781130441049,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,15,Cold,37.1678871311428,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,16,Cold,35.542699754710334,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,17,Cold,42.706238740208626,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,18,Cold,41.40364539022959,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,19,Cold,33.64696927229768,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,1,Warm,30.78663221549485,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,2,Warm,31.146033147095878,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,3,Warm,27.115796832142703,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,4,Warm,31.32697623847283,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,5,Warm,26.35847476339502,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,6,Warm,28.11062835498958,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,7,Warm,28.707437477409293,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,8,Warm,29.87445572741875,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,9,Warm,29.706479859943,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,10,Warm,29.39868323300638,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,11,Warm,27.460647126599433,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,12,Warm,31.77558273445622,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,13,Warm,30.199374777655667,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,14,Warm,28.031177674068694,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,15,Warm,27.97655355079379,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,16,Warm,31.53320884632969,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,17,Warm,30.15524992060101,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,18,Warm,27.37082017674121,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,19,Warm,28.29591807106541,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,1,Parallel,25.542439741228055,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,2,Parallel,21.041092344585927,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,3,Parallel,22.69967244703751,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,4,Parallel,25.081181398138067,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,5,Parallel,22.165376943143052,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,6,Parallel,26.41016979185409,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,7,Parallel,22.32643504880575,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,8,Parallel,21.921932164627627,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,9,Parallel,22.00550991176281,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,10,Parallel,24.062189914325373,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,11,Parallel,23.38341689518124,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,12,Parallel,22.843007092894048,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,13,Parallel,24.165716116695485,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,14,Parallel,22.79302273274039,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,15,Parallel,24.38032206221948,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,16,Parallel,24.97372161967078,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,17,Parallel,24.538410788062592,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,18,Parallel,22.379292806293233,Success
+GitHub Actions API Scrape,GitHub Actions,Project B,19,Parallel,25.353596635801292,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,1,Cold,48.56623415884172,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,2,Cold,50.915602634613016,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,3,Cold,51.4150188812029,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,4,Cold,46.641164550244426,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,5,Cold,50.74160617783648,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,6,Cold,45.51866191812493,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,7,Cold,50.05396553391366,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,8,Cold,42.32528261090934,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,9,Cold,50.37137289863473,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,10,Cold,48.091369181129366,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,11,Cold,42.12600719701199,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,12,Cold,49.16890585413482,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,13,Cold,46.136353160671256,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,14,Cold,55.41204583707952,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,15,Cold,48.691333950117915,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,16,Cold,56.06045542872817,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,17,Cold,50.55158306247406,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,18,Cold,44.97918055826763,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,19,Cold,49.06971029028408,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,1,Warm,24.486355227680985,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,2,Warm,25.728329756419075,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,3,Warm,20.87813710557178,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,4,Warm,23.49620609675047,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,5,Warm,22.843759482705387,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,6,Warm,24.473991260826676,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,7,Warm,24.40156093801436,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,8,Warm,24.65568948053946,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,9,Warm,25.3489703739793,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,10,Warm,23.651886917489882,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,11,Warm,25.560279430132198,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,12,Warm,23.233483737099093,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,13,Warm,23.181363032105097,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,14,Warm,24.6870783731169,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,15,Warm,24.392550632198787,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,16,Warm,22.03444800613593,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,17,Warm,22.057214868099784,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,18,Warm,20.95533425225898,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,1,Parallel,22.040665383397887,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,2,Parallel,20.950736122013957,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,3,Parallel,20.70822936827959,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,4,Parallel,18.865088060596587,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,5,Parallel,17.483078579111112,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,6,Parallel,19.605240711027072,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,7,Parallel,19.917782336465685,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,8,Parallel,20.022357782459526,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,9,Parallel,20.168530372515367,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,10,Parallel,22.233462703697366,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,11,Parallel,18.024152558483166,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,12,Parallel,16.56558412178102,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,13,Parallel,19.31581369630755,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,14,Parallel,17.001093478572834,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,15,Parallel,22.740611799202473,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,16,Parallel,20.320416364445347,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,17,Parallel,18.871750270778243,Success
+GitHub Actions API Scrape,GitHub Actions,Project C,18,Parallel,19.296039859471467,Success
+CircleCI API Scrape,CircleCI,Project A,1,Cold,18.61521542068406,Success
+CircleCI API Scrape,CircleCI,Project A,2,Cold,17.695027079124074,Success
+CircleCI API Scrape,CircleCI,Project A,3,Cold,17.346694466678386,Success
+CircleCI API Scrape,CircleCI,Project A,4,Cold,16.4962984306727,Success
+CircleCI API Scrape,CircleCI,Project A,5,Cold,14.405426659572504,Success
+CircleCI API Scrape,CircleCI,Project A,6,Cold,15.81192879791632,Success
+CircleCI API Scrape,CircleCI,Project A,7,Cold,14.581617812898749,Success
+CircleCI API Scrape,CircleCI,Project A,8,Cold,19.04431627737987,Success
+CircleCI API Scrape,CircleCI,Project A,9,Cold,14.430462421116651,Success
+CircleCI API Scrape,CircleCI,Project A,10,Cold,14.040276542367256,Success
+CircleCI API Scrape,CircleCI,Project A,11,Cold,13.550614004774676,Success
+CircleCI API Scrape,CircleCI,Project A,12,Cold,17.203194054823406,Success
+CircleCI API Scrape,CircleCI,Project A,13,Cold,13.498694828757031,Success
+CircleCI API Scrape,CircleCI,Project A,14,Cold,16.91328593770275,Success
+CircleCI API Scrape,CircleCI,Project A,15,Cold,16.42970948194084,Success
+CircleCI API Scrape,CircleCI,Project A,16,Cold,15.691311552587495,Success
+CircleCI API Scrape,CircleCI,Project A,17,Cold,19.74098527862808,Success
+CircleCI API Scrape,CircleCI,Project A,18,Cold,15.179110167545568,Success
+CircleCI API Scrape,CircleCI,Project A,19,Cold,16.74509043120212,Success
+CircleCI API Scrape,CircleCI,Project A,1,Warm,8.764385738533406,Success
+CircleCI API Scrape,CircleCI,Project A,2,Warm,9.201572039264768,Success
+CircleCI API Scrape,CircleCI,Project A,3,Warm,10.754121433282867,Success
+CircleCI API Scrape,CircleCI,Project A,4,Warm,9.227959356029743,Success
+CircleCI API Scrape,CircleCI,Project A,5,Warm,9.965568363026694,Success
+CircleCI API Scrape,CircleCI,Project A,6,Warm,10.688408424416847,Success
+CircleCI API Scrape,CircleCI,Project A,7,Warm,10.081523357765336,Success
+CircleCI API Scrape,CircleCI,Project A,8,Warm,9.5848088838644,Success
+CircleCI API Scrape,CircleCI,Project A,9,Warm,10.053661457917553,Success
+CircleCI API Scrape,CircleCI,Project A,10,Warm,7.884886902287622,Success
+CircleCI API Scrape,CircleCI,Project A,11,Warm,9.720489785476417,Success
+CircleCI API Scrape,CircleCI,Project A,12,Warm,11.062710416141073,Success
+CircleCI API Scrape,CircleCI,Project A,13,Warm,11.752014422675643,Success
+CircleCI API Scrape,CircleCI,Project A,14,Warm,10.69554672454578,Success
+CircleCI API Scrape,CircleCI,Project A,15,Warm,10.153660834018163,Success
+CircleCI API Scrape,CircleCI,Project A,16,Warm,10.16763824411665,Success
+CircleCI API Scrape,CircleCI,Project A,17,Warm,9.234069925370003,Success
+CircleCI API Scrape,CircleCI,Project A,18,Warm,10.9622991701503,Success
+CircleCI API Scrape,CircleCI,Project A,19,Warm,10.902825859233145,Success
+CircleCI API Scrape,CircleCI,Project A,1,Parallel,7.569672674438766,Success
+CircleCI API Scrape,CircleCI,Project A,2,Parallel,6.760263116516386,Success
+CircleCI API Scrape,CircleCI,Project A,3,Parallel,8.348202337609477,Success
+CircleCI API Scrape,CircleCI,Project A,4,Parallel,9.007922951638935,Success
+CircleCI API Scrape,CircleCI,Project A,5,Parallel,7.641681318458525,Success
+CircleCI API Scrape,CircleCI,Project A,6,Parallel,8.212965423378,Success
+CircleCI API Scrape,CircleCI,Project A,7,Parallel,8.33006412914324,Success
+CircleCI API Scrape,CircleCI,Project A,8,Parallel,8.791018276062736,Success
+CircleCI API Scrape,CircleCI,Project A,9,Parallel,8.411066183228543,Success
+CircleCI API Scrape,CircleCI,Project A,10,Parallel,7.257436134700649,Success
+CircleCI API Scrape,CircleCI,Project A,11,Parallel,8.677523118447525,Success
+CircleCI API Scrape,CircleCI,Project A,12,Parallel,7.761251404550224,Success
+CircleCI API Scrape,CircleCI,Project A,13,Parallel,8.023313180589904,Success
+CircleCI API Scrape,CircleCI,Project A,14,Parallel,8.711224707381216,Success
+CircleCI API Scrape,CircleCI,Project A,15,Parallel,6.528591309327417,Success
+CircleCI API Scrape,CircleCI,Project A,16,Parallel,8.690876481649358,Success
+CircleCI API Scrape,CircleCI,Project A,17,Parallel,7.138727596435722,Success
+CircleCI API Scrape,CircleCI,Project A,18,Parallel,7.53569361341947,Success
+CircleCI API Scrape,CircleCI,Project A,19,Parallel,8.967221827657491,Success
+CircleCI API Scrape,CircleCI,Project B,1,Cold,25.40348805663718,Success
+CircleCI API Scrape,CircleCI,Project B,2,Cold,21.359073672551517,Success
+CircleCI API Scrape,CircleCI,Project B,3,Cold,20.940845686074894,Success
+CircleCI API Scrape,CircleCI,Project B,4,Cold,19.95028892648232,Success
+CircleCI API Scrape,CircleCI,Project B,5,Cold,21.2902801973688,Success
+CircleCI API Scrape,CircleCI,Project B,6,Cold,26.205631073852278,Success
+CircleCI API Scrape,CircleCI,Project B,7,Cold,23.370957974934946,Success
+CircleCI API Scrape,CircleCI,Project B,8,Cold,21.01196341556068,Success
+CircleCI API Scrape,CircleCI,Project B,9,Cold,22.736187726432426,Success
+CircleCI API Scrape,CircleCI,Project B,10,Cold,20.32981653073877,Success
+CircleCI API Scrape,CircleCI,Project B,11,Cold,22.821403116579226,Success
+CircleCI API Scrape,CircleCI,Project B,12,Cold,24.39713280836585,Success
+CircleCI API Scrape,CircleCI,Project B,13,Cold,20.18174863979468,Success
+CircleCI API Scrape,CircleCI,Project B,14,Cold,24.741814033609682,Success
+CircleCI API Scrape,CircleCI,Project B,15,Cold,26.17162478803212,Success
+CircleCI API Scrape,CircleCI,Project B,16,Cold,24.859315681272204,Success
+CircleCI API Scrape,CircleCI,Project B,17,Cold,21.89824799382894,Success
+CircleCI API Scrape,CircleCI,Project B,18,Cold,24.88408995468065,Success
+CircleCI API Scrape,CircleCI,Project B,19,Cold,21.04930129988067,Success
+CircleCI API Scrape,CircleCI,Project B,1,Warm,13.734179282911242,Success
+CircleCI API Scrape,CircleCI,Project B,2,Warm,17.598505340415215,Success
+CircleCI API Scrape,CircleCI,Project B,3,Warm,13.479311789011986,Success
+CircleCI API Scrape,CircleCI,Project B,4,Warm,14.036588194203222,Success
+CircleCI API Scrape,CircleCI,Project B,5,Warm,14.695824740662708,Success
+CircleCI API Scrape,CircleCI,Project B,6,Warm,15.108838492760624,Success
+CircleCI API Scrape,CircleCI,Project B,7,Warm,16.586058415910486,Success
+CircleCI API Scrape,CircleCI,Project B,8,Warm,15.952954207761827,Success
+CircleCI API Scrape,CircleCI,Project B,9,Warm,16.631654373056005,Success
+CircleCI API Scrape,CircleCI,Project B,10,Warm,15.926364047190027,Success
+CircleCI API Scrape,CircleCI,Project B,11,Warm,15.353059951839134,Success
+CircleCI API Scrape,CircleCI,Project B,12,Warm,13.330177126664312,Success
+CircleCI API Scrape,CircleCI,Project B,13,Warm,15.176983765276308,Success
+CircleCI API Scrape,CircleCI,Project B,14,Warm,14.124640395669294,Success
+CircleCI API Scrape,CircleCI,Project B,15,Warm,14.135868302311266,Success
+CircleCI API Scrape,CircleCI,Project B,16,Warm,14.657691880290047,Success
+CircleCI API Scrape,CircleCI,Project B,17,Warm,17.508646979040297,Success
+CircleCI API Scrape,CircleCI,Project B,18,Warm,16.20486737761095,Success
+CircleCI API Scrape,CircleCI,Project B,19,Warm,16.238299032013227,Success
+CircleCI API Scrape,CircleCI,Project B,1,Parallel,11.918881722964157,Success
+CircleCI API Scrape,CircleCI,Project B,2,Parallel,12.999645038910998,Success
+CircleCI API Scrape,CircleCI,Project B,3,Parallel,12.78011845158086,Success
+CircleCI API Scrape,CircleCI,Project B,4,Parallel,13.29279513084531,Success
+CircleCI API Scrape,CircleCI,Project B,5,Parallel,13.834354521626267,Success
+CircleCI API Scrape,CircleCI,Project B,6,Parallel,12.859568168914741,Success
+CircleCI API Scrape,CircleCI,Project B,7,Parallel,13.119144962400805,Success
+CircleCI API Scrape,CircleCI,Project B,8,Parallel,13.665714586158748,Success
+CircleCI API Scrape,CircleCI,Project B,9,Parallel,13.407586449785779,Success
+CircleCI API Scrape,CircleCI,Project B,10,Parallel,13.807842743341045,Success
+CircleCI API Scrape,CircleCI,Project B,11,Parallel,10.263535554936762,Success
+CircleCI API Scrape,CircleCI,Project B,12,Parallel,12.014847145164731,Success
+CircleCI API Scrape,CircleCI,Project B,13,Parallel,12.844724249506804,Success
+CircleCI API Scrape,CircleCI,Project B,14,Parallel,11.986771987499308,Success
+CircleCI API Scrape,CircleCI,Project B,15,Parallel,11.912564110243743,Success
+CircleCI API Scrape,CircleCI,Project B,16,Parallel,10.432233078825856,Success
+CircleCI API Scrape,CircleCI,Project B,17,Parallel,13.661029197930201,Success
+CircleCI API Scrape,CircleCI,Project B,18,Parallel,12.667079199610768,Success
+CircleCI API Scrape,CircleCI,Project B,19,Parallel,12.071397726206861,Success
+CircleCI API Scrape,CircleCI,Project C,1,Cold,3.857975083176291,Success
+CircleCI API Scrape,CircleCI,Project C,2,Cold,2.7656218571574267,Success
+CircleCI API Scrape,CircleCI,Project C,3,Cold,3.4300485178922058,Success
+CircleCI API Scrape,CircleCI,Project C,4,Cold,3.1150435220106614,Success
+CircleCI API Scrape,CircleCI,Project C,5,Cold,3.3093289966144295,Success
+CircleCI API Scrape,CircleCI,Project C,6,Cold,1.9737185391154686,Success
+CircleCI API Scrape,CircleCI,Project C,7,Cold,2.9166769419984453,Success
+CircleCI API Scrape,CircleCI,Project C,8,Cold,2.7770636087111678,Success
+CircleCI API Scrape,CircleCI,Project C,9,Cold,3.3429368823840866,Success
+CircleCI API Scrape,CircleCI,Project C,10,Cold,4.392504833874304,Success
+CircleCI API Scrape,CircleCI,Project C,11,Cold,3.761875228940193,Success
+CircleCI API Scrape,CircleCI,Project C,12,Cold,3.6451149654725468,Success
+CircleCI API Scrape,CircleCI,Project C,13,Cold,2.2608403177742873,Success
+CircleCI API Scrape,CircleCI,Project C,14,Cold,3.1071170968226056,Success
+CircleCI API Scrape,CircleCI,Project C,15,Cold,2.879745025986646,Success
+CircleCI API Scrape,CircleCI,Project C,16,Cold,2.289525262016079,Success
+CircleCI API Scrape,CircleCI,Project C,17,Cold,3.1608297926144506,Success
+CircleCI API Scrape,CircleCI,Project C,18,Cold,3.5036620660883067,Success
+CircleCI API Scrape,CircleCI,Project C,19,Cold,3.1648918262185837,Success
+CircleCI API Scrape,CircleCI,Project C,1,Warm,2.2761575517023895,Success
+CircleCI API Scrape,CircleCI,Project C,2,Warm,2.4047412574793223,Success
+CircleCI API Scrape,CircleCI,Project C,3,Warm,1.8866415520913211,Success
+CircleCI API Scrape,CircleCI,Project C,4,Warm,2.5866259663883513,Success
+CircleCI API Scrape,CircleCI,Project C,5,Warm,1.742508736613098,Success
+CircleCI API Scrape,CircleCI,Project C,6,Warm,1.933336926516849,Success
+CircleCI API Scrape,CircleCI,Project C,7,Warm,1.9846391408772839,Success
+CircleCI API Scrape,CircleCI,Project C,8,Warm,1.8682615930631958,Success
+CircleCI API Scrape,CircleCI,Project C,9,Warm,1.549687629479885,Success
+CircleCI API Scrape,CircleCI,Project C,10,Warm,2.3175070776242968,Success
+CircleCI API Scrape,CircleCI,Project C,11,Warm,2.5564901488190754,Success
+CircleCI API Scrape,CircleCI,Project C,12,Warm,2.1506751010055467,Success
+CircleCI API Scrape,CircleCI,Project C,13,Warm,2.0343742629594224,Success
+CircleCI API Scrape,CircleCI,Project C,14,Warm,1.88945375091577,Success
+CircleCI API Scrape,CircleCI,Project C,15,Warm,2.1378029204888622,Success
+CircleCI API Scrape,CircleCI,Project C,16,Warm,2.1756538049370433,Success
+CircleCI API Scrape,CircleCI,Project C,17,Warm,1.9454288930940422,Success
+CircleCI API Scrape,CircleCI,Project C,18,Warm,1.8190293602471712,Success
+CircleCI API Scrape,CircleCI,Project C,1,Parallel,1.493614605139519,Success
+CircleCI API Scrape,CircleCI,Project C,2,Parallel,1.7814377686402973,Success
+CircleCI API Scrape,CircleCI,Project C,3,Parallel,1.5121941618442518,Success
+CircleCI API Scrape,CircleCI,Project C,4,Parallel,1.191521455021888,Success
+CircleCI API Scrape,CircleCI,Project C,5,Parallel,1.335778084816335,Success
+CircleCI API Scrape,CircleCI,Project C,6,Parallel,1.180165868479682,Success
+CircleCI API Scrape,CircleCI,Project C,7,Parallel,1.0862327286126487,Success
+CircleCI API Scrape,CircleCI,Project C,8,Parallel,1.8019494022155853,Success
+CircleCI API Scrape,CircleCI,Project C,9,Parallel,1.5349366412531098,Success
+CircleCI API Scrape,CircleCI,Project C,10,Parallel,1.5926855005463871,Success
+CircleCI API Scrape,CircleCI,Project C,11,Parallel,1.058711591497368,Success
+CircleCI API Scrape,CircleCI,Project C,12,Parallel,1.6088318478638988,Success
+CircleCI API Scrape,CircleCI,Project C,13,Parallel,1.6396591467754764,Success
+CircleCI API Scrape,CircleCI,Project C,14,Parallel,1.7505887265781779,Success
+CircleCI API Scrape,CircleCI,Project C,15,Parallel,1.290330532973764,Success
+CircleCI API Scrape,CircleCI,Project C,16,Parallel,1.2437359412911362,Success
+CircleCI API Scrape,CircleCI,Project C,17,Parallel,1.7553462900317762,Success
+CircleCI API Scrape,CircleCI,Project C,18,Parallel,1.6290264761206477,Success
+CircleCI API Scrape,CircleCI,Project C,19,Parallel,1.4404725824405347,Success
