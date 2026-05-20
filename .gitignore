@@ -17,6 +17,7 @@ thesis_results_chapter.txt
 thesis_discussion_chapter.txt
 generate_report_doc.py
 generate_metadata_doc.py
+generate_results_only_doc.py
 Master_AI_Thesis_Prompt.txt
 jenkins.war
 
