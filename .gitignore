@@ -11,6 +11,7 @@ Thumbs.db
 # Ignore large binary files
 *.docx
 *.pdf
+*.txt
 Master_AI_Thesis_Prompt.txt
 jenkins.war
 
